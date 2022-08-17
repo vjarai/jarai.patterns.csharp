@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Abstrakt Fabrik Entwurfsmuster - Die Artikelfabrik ist eine abstrakte Fabrik, da sie nur abstrakte Fabrikmethoden enthält. In der Kemper Fabrik werden Kemper Bauteile erzeugt, in der GEBERIT Fabrik Geberit Bauteile. Durch Austausch der Fabrik können Projekte mit Bauteilen unterschiedlicher Hersteller erstellt werden.">
+    <Position X="0.5" Y="4.201" Height="0.903" Width="5.138" />
+  </Comment>
+  <Class Name="Jarai.Patterns.Creational.AbstractFactory.AbstrakteFabrik">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBAAAAAAA=</HashCode>
+      <FileName>AbstrakteFabrik.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Creational.AbstractFactory.KemperFabrik">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBAAAAAAA=</HashCode>
+      <FileName>KemperFabrik.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Creational.AbstractFactory.GeberitFabrik">
+    <Position X="2.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBAAAAAAA=</HashCode>
+      <FileName>GeberitFabrik.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Creational.AbstractFactory.KemperVentil" Collapsed="true">
+    <Position X="5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KemperVentil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Creational.AbstractFactory.Ventil" Collapsed="true">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ventil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Creational.AbstractFactory.GeberitVentil" Collapsed="true">
+    <Position X="7" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeberitVentil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Creational.AbstractFactory.GeberitAbzweig" Collapsed="true">
+    <Position X="9" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeberitAbzweig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Creational.AbstractFactory.Abzweig" Collapsed="true">
+    <Position X="10" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abzweig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Creational.AbstractFactory.KemperAbzweig" Collapsed="true">
+    <Position X="11" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KemperAbzweig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

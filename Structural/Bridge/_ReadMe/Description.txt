@@ -1,0 +1,2 @@
+﻿A BusinessObject abstraction is decoupled from the implementation in DataObject. 
+The DataObject implementations can evolve dynamically without changing any clients.

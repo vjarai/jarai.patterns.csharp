@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="">
+    <Position X="0.5" Y="4.531" Height="1.552" Width="3.075" />
+  </Comment>
+  <Class Name="_11___Zustand_Entwurfsmuster.Zustand">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAEAAEAAAAAAAAAAAAAAAAAAAACABABAA=</HashCode>
+      <FileName>Zustand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_11___Zustand_Entwurfsmuster.Aufgelegt">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Aufgelegt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_11___Zustand_Entwurfsmuster.Abgehoben">
+    <Position X="6" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Abgehoben.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_11___Zustand_Entwurfsmuster.Verbunden">
+    <Position X="8.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Verbunden.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_11___Zustand_Entwurfsmuster.Telefon">
+    <Position X="1" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAEAAAAEAAAAEAAAIAAAAAAAAACABABQA=</HashCode>
+      <FileName>Telefon.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AKtuellerZustand" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

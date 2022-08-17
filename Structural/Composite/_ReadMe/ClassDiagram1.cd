@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Kompositum Entwurfsmuster - Eine Baugruppe besteht aus (hat) N Bauteile. Damit man einer Baugruppe weitere Baugruppen hinzufügen kann, ist die Baugruppe ein Bauteil (Austauschbarkeit/Vererbung).">
+    <Position X="4.66" Y="1.914" Height="0.968" Width="3.554" />
+  </Comment>
+  <Class Name="Ex08.Compositum.Baugruppe">
+    <Position X="1.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Baugruppe.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_bauteile" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Ex08.Compositum.Bauteil">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Bauteil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

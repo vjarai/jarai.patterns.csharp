@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Vererbung bedeutet Austauschbarkeit (&quot;IST EIN&quot;)&#xD;&#xA;================================&#xD;&#xA;&#xD;&#xA;Ein Bus und ein Lkw IST EIN Kfz.&#xD;&#xA;&#xD;&#xA;=&gt; An Stelle eines KFZ kann jederzeit ein Bus oder ein LKW verwendet werden. &#xD;&#xA;&#xD;&#xA;(vgl. https://en.wikipedia.org/wiki/Liskov_substitution_principle)&#xD;&#xA;">
+    <Position X="3.718" Y="0.875" Height="1.743" Width="4.526" />
+  </Comment>
+  <Class Name="Refresher.Inheritance.Lkw">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAgAQAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Lkw.cs</FileName>
+      <NewMemberFileName>LKW.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Refresher.Inheritance.Bus">
+    <Position X="2.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAIAAAAAAAAACAAAABAA=</HashCode>
+      <FileName>Bus.cs</FileName>
+      <NewMemberFileName>BUS.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Refresher.Inheritance.Kfz">
+    <Position X="1.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQIAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Kfz.cs</FileName>
+      <NewMemberFileName>KFZ.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

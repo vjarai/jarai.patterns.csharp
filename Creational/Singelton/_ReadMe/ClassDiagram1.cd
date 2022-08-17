@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="Singelton Entwursmuster - Es kann nur einen geben!&#xD;&#xA;&#xD;&#xA;Der private Konstruktor verhindert, dass jeder eine Instanz von der Klasse erstellen kann. Mit einer statischen GetInstance Methode wir die &quot;Henne/Ei&quot; Problematik durchbrochen.&#xD;&#xA;&#xD;&#xA;Beim ersten Aufruf liefert GetInstance ein neues Objekt. Bei allen weiteren Aufrufen die besthende Instanz.&#xD;&#xA;&#xD;&#xA;Vorteile:&#xD;&#xA;&#xD;&#xA;- Es existiert garanrier nur ein Objekt z.B. für Manager Klassen&#xD;&#xA;- Das Objekt wird gecached&#xD;&#xA;- Der Zurgriff ist von jeder Stelle im Programm möglich&#xD;&#xA;">
+    <Position X="4.906" Y="0.5" Height="4" Width="3.606" />
+  </Comment>
+  <Class Name="_08___Singelton_Entwurfsmuster.Highlander">
+    <Position X="1.5" Y="0.5" Width="2" />
+    <AssociationLine Name="_instance" Type="_08___Singelton_Entwurfsmuster.Highlander" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="1.312" />
+        <Point X="3.75" Y="1.312" />
+        <Point X="3.75" Y="0.812" />
+        <Point X="3.5" Y="0.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Highlander.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

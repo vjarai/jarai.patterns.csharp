@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Besucher Entwurfsmuster - Projekt kann von außen erweitert werden.DIe Projekt Klasse bei erweiterungen unberührt.">
+    <Position X="6.365" Y="0.5" Height="3.49" Width="2.637" />
+  </Comment>
+  <Class Name="_14___Besucher_Entwurfsmuster.Besucher">
+    <Position X="1.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Besucher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_14___Besucher_Entwurfsmuster.Symbol">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAEBAAAAAAAAAAA=</HashCode>
+      <FileName>Symbol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_14___Besucher_Entwurfsmuster.SummenBesucher">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAEAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>SummenBesucher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_14___Besucher_Entwurfsmuster.MaxBesucher">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAABAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>MaxBesucher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_14___Besucher_Entwurfsmuster.Project">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAABAAAAAAABAAA=</HashCode>
+      <FileName>Project.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_symols" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

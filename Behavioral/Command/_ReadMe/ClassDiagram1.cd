@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="Kommando Entwurfsmuster&#xD;&#xA;Für jede Roboterfunktion gibt es eine eigene Klasse, mit RoboterCommand als Basisklasse. &#xD;&#xA;&#xD;&#xA;Commands können ausgeführt und rückgängig gemacht werden. &#xD;&#xA;&#xD;&#xA;Ein MacroCommand hat beliebig viele childCommands und ist selbst ein Command (Kompositum Pattern).&#xD;&#xA;&#xD;&#xA;Somit kann ein MacroCommand selbst weitere MacroCommands enthalten.">
+    <Position X="9.166" Y="0.79" Height="3.075" Width="3.383" />
+  </Comment>
+  <Class Name="Ex12.Command.Roboter">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAQAAAIAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Roboter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ex12.Command.MacroCommand">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAFAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MacroCommand.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_childCommands" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Ex12.Command.RobotCommand">
+    <Position X="3" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RobotCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ex12.Command.HebenCommand">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>HebenCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ex12.Command.SenkenCommand">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Senken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ex12.Command.DrehenRechtsCommand">
+    <Position X="4.5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DrehenRechtsCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ex12.Command.DrehenLinksCommand">
+    <Position X="7" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DrehenLinksCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

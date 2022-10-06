@@ -6,9 +6,9 @@ namespace Jarai.Patterns.Behavioral.ChainOfResponsibilty
     {
         private static void Main(string[] args)
         {
-            var lisa = new Experte("Lisa");
-            var susi = new Experte("Susi", lisa);
-            var fritz = new Experte("Fritz", susi);
+            var lisa = new Person("Lisa");
+            var susi = new Person("Susi", lisa);
+            var fritz = new Person("Fritz", susi);
 
             // Experten trainieren...
             fritz.LerneAntwort("Eins", "one");

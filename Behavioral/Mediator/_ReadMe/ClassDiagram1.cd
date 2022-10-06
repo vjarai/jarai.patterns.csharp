@@ -1,49 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Comment CommentText="Beobachter Entwurfsmuster:&#xD;&#xA;Der Beobachter fragt die Datenquelle nicht zyklisch ab sondern registriert sich einmalig bei der Datenquelle und wird dann automatisch von Änderungen informiert. Das Beobachter Entwurfsmuster gehört neben den Strategieenwurfsmuster zu dan am häufigst verwendeten.">
-    <Position X="3.802" Y="0.5" Height="1.99" Width="2.794" />
-  </Comment>
-  <Class Name="Beobachter_Enwurfsmuster.Boerse">
-    <Position X="1.5" Y="2.5" Width="1.75" />
+  <Class Name="Jarai.Patterns.Behavioral.Mediator.AbstractChatroom">
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAIAgAACAABAAAAAAAAAAEAAAAAAAAAAAAEAAAAAAA=</HashCode>
-      <FileName>Boerse.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractChatroom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Behavioral.Mediator.Beatle">
+    <Position X="8" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Beatle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Behavioral.Mediator.Chatroom">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAEAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Chatroom.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
-      <Field Name="_beobachter" />
+      <Field Name="_participants" />
     </ShowAsCollectionAssociation>
-    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Beobachter_Enwurfsmuster.Firma">
-    <Position X="4" Y="4.5" Width="1.5" />
+  <Class Name="Jarai.Patterns.Behavioral.Mediator.NonBeatle">
+    <Position X="5.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Firma.cs</FileName>
-      <NewMemberFileName>Person.cs</NewMemberFileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>NonBeatle.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Beobachter_Enwurfsmuster.Person">
-    <Position X="6.25" Y="4.5" Width="1.5" />
+  <Class Name="Jarai.Patterns.Behavioral.Mediator.Participant">
+    <Position X="6.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Person.cs</FileName>
+      <HashCode>AACAIAAAAAAAAAAAAEAAACQAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Participant.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <ShowAsAssociation>
+      <Field Name="_chatroom" />
+    </ShowAsAssociation>
   </Class>
-  <Interface Name="Beobachter_Enwurfsmuster.IBeobachtbar">
-    <Position X="1.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAACAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IBeobachtbar.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="Beobachter_Enwurfsmuster.IBeobachter">
-    <Position X="5" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IBeobachter.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

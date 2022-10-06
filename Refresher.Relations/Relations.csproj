@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A1EC5A37-1867-444F-9060-4A262E762C5A}</ProjectGuid>
+    <ProjectGuid>{AFC757B5-2488-43D9-BDE2-0FCDD2FFBE9D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Refresher.Aggregation</RootNamespace>
-    <AssemblyName>Refresher.Aggregation</AssemblyName>
+    <RootNamespace>Jarai.CSharp.Refresher.Relations</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Refresher.Relations</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
@@ -70,12 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lkw.cs" />
     <Compile Include="Kfz.cs" />
-    <Compile Include="Karosserie.cs" />
+    <Compile Include="Pkw.cs" />
     <Compile Include="Motor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rad.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -98,7 +98,9 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="_ReadMe\Aufgaben.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

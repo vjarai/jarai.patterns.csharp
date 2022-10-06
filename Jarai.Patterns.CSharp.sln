@@ -57,7 +57,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flyweigth", "Structural\Fly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Structural\Proxy\Proxy.csproj", "{01503A0F-FA51-4C83-A260-7E61D6B23101}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relations", "Refresher.Relations\Relations.csproj", "{AFC757B5-2488-43D9-BDE2-0FCDD2FFBE9D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relations", "_Refresher\Relations.csproj", "{AFC757B5-2488-43D9-BDE2-0FCDD2FFBE9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

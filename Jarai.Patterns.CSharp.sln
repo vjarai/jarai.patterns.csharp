@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "Creational
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype (Clone)", "Creational\Prototype\Prototype (Clone).csproj", "{6CF01842-6218-4D50-B7E1-A0B31273FD57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singelton", "Creational\Singelton\Singelton.csproj", "{17546D5E-73E7-4986-95BA-5D9BE351259A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Creational\Singelton\Singleton.csproj", "{17546D5E-73E7-4986-95BA-5D9BE351259A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibilty", "Behavioral\Chain of responsibility\ChainOfResponsibilty.csproj", "{AE67141D-3E03-4B15-8AAA-79064163C4FB}"
 EndProject

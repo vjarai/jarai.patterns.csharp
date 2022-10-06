@@ -2,31 +2,28 @@
 
 namespace Jarai.Patterns.Behavioral.Visitor
 {
-    internal class Program
+    /// <summary>
+    ///     Visitor Design Pattern
+    /// </summary>
+    public class Program
     {
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            var project = new Project();
+            // Setup employee collection
 
-            project.AddSymbol(new Symbol(100.00));
-            project.AddSymbol(new Symbol(200.00));
-            project.AddSymbol(new Symbol(300.00));
-            project.AddSymbol(new Symbol(400.00));
-            project.AddSymbol(new Symbol(500.00));
+            var employee = new Employees();
+            employee.Attach(new Clerk());
+            employee.Attach(new Director());
+            employee.Attach(new President());
 
-            var sb = new SummenBesucher();
+            // Employees are 'visited'
 
-            project.EmpfangeBesucher(sb);
+            employee.Accept(new IncomeVisitor());
+            employee.Accept(new VacationVisitor());
 
-            Console.WriteLine("Summe = {0:0.00} Euro", sb.Summe);
+            // Wait for user
 
-            var mb = new MaxBesucher();
-
-            project.EmpfangeBesucher(mb);
-
-            Console.WriteLine("Max   = {0:0.00} Euro", mb.Max);
-
-            Console.Read();
+            Console.ReadKey();
         }
     }
 }

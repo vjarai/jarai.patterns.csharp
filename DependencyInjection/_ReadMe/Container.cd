@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Jarai.Patterns.Other.DependencyInjection.Container.SimpleIocContainer">
+    <Position X="0.5" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAIABAABAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Container\SimpleIocContainer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_registrations" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Jarai.Patterns.Other.DependencyInjection.Container.TypeRegistration">
+    <Position X="7.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAABAACAEAAAAAAAAAAAAAAAAAAAAAAQAAAgAAAAAA=</HashCode>
+      <FileName>Container\TypeRegistration.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="LifeCycle" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="Jarai.Patterns.Other.DependencyInjection.Container.LifeCycle">
+    <Position X="11.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Container\LifeCycle.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

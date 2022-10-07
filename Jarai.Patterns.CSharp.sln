@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", "{F4AFB136-9B2D-4375-AA19-C7DE22CEF927}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Behavioral", "1 Behavioral", "{F4AFB136-9B2D-4375-AA19-C7DE22CEF927}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{9A2CB6B5-965B-4557-910B-2F990B113DE4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Creational", "2 Creational", "{9A2CB6B5-965B-4557-910B-2F990B113DE4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Refresher", "_Refresher", "{3903EEC0-4BC6-42DF-B732-EBBB0DD04C6D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural", "Structural", "{F53B4757-3F01-4837-BD1E-F89B8A16FE15}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 Structural", "3 Structural", "{F53B4757-3F01-4837-BD1E-F89B8A16FE15}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "Creational\AbstractFactory\AbstractFactory.csproj", "{5B7037CB-F88A-4317-9BE9-C23B0A3FC484}"
 EndProject
@@ -58,6 +58,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Structural\Proxy\Proxy.csproj", "{01503A0F-FA51-4C83-A260-7E61D6B23101}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relations", "_Refresher\Relations.csproj", "{AFC757B5-2488-43D9-BDE2-0FCDD2FFBE9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 Optional", "4 Optional", "{380780F9-E50B-45EC-82A1-A066459BBFAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{C869CC64-6009-4A8E-9831-C5D4D132E514}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -161,6 +165,10 @@ Global
 		{AFC757B5-2488-43D9-BDE2-0FCDD2FFBE9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFC757B5-2488-43D9-BDE2-0FCDD2FFBE9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFC757B5-2488-43D9-BDE2-0FCDD2FFBE9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C869CC64-6009-4A8E-9831-C5D4D132E514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C869CC64-6009-4A8E-9831-C5D4D132E514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C869CC64-6009-4A8E-9831-C5D4D132E514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C869CC64-6009-4A8E-9831-C5D4D132E514}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -190,6 +198,7 @@ Global
 		{1FCD3959-242C-40C4-8E92-13E5CE92D6E1} = {F53B4757-3F01-4837-BD1E-F89B8A16FE15}
 		{01503A0F-FA51-4C83-A260-7E61D6B23101} = {F53B4757-3F01-4837-BD1E-F89B8A16FE15}
 		{AFC757B5-2488-43D9-BDE2-0FCDD2FFBE9D} = {3903EEC0-4BC6-42DF-B732-EBBB0DD04C6D}
+		{C869CC64-6009-4A8E-9831-C5D4D132E514} = {380780F9-E50B-45EC-82A1-A066459BBFAC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4932A8B6-D7D9-4C61-AB81-2F4B361E7C4D}

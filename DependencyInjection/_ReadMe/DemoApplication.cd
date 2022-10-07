@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Jarai.Patterns.Other.DependencyInjection.DemoApplication.ErpApplication">
+    <Position X="1" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>DemoApplication\ErpApplication.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BuchhaltungsService" />
+      <Property Name="LagerService" />
+      <Property Name="LoggingService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Jarai.Patterns.Other.DependencyInjection.DemoApplication.BuchhaltungsService">
+    <Position X="3.75" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DemoApplication\BuchhaltungsService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="KundenService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Jarai.Patterns.Other.DependencyInjection.DemoApplication.LagerService">
+    <Position X="3.75" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>DemoApplication\LagerService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BestellService" />
+      <Property Name="VersandService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Jarai.Patterns.Other.DependencyInjection.DemoApplication.BestellService">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>DemoApplication\BestellService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="LoggingService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Jarai.Patterns.Other.DependencyInjection.DemoApplication.VersandService">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>DemoApplication\VersandService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="LoggingService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Jarai.Patterns.Other.DependencyInjection.DemoApplication.KundenService">
+    <Position X="7.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>DemoApplication\KundenService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="LoggingService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Jarai.Patterns.Other.DependencyInjection.DemoApplication.LoggingService">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DemoApplication\LoggingService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

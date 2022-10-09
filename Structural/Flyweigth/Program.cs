@@ -1,9 +1,39 @@
-﻿namespace Jarai.Patterns.Structural.Flyweigth
+﻿using System;
+
+namespace Jarai.Patterns.Structural.Flyweigth
 {
-    internal class Program
+    /// <summary>
+    ///     Flyweight Design Pattern
+    /// </summary>
+    public class Program
     {
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            // Build a document with text
+
+            var document = "AAZZBBZB";
+            var chars = document.ToCharArray();
+
+            var factory = new CharacterFactory();
+
+            // extrinsic state
+
+            var pointSize = 10;
+
+            // For each character use a flyweight object
+
+            foreach (var c in chars)
+            {
+                pointSize++;
+                var character = factory.GetCharacter(c);
+                character.Display(pointSize);
+            }
+
+            // Wait for user
+
+            Console.ReadKey();
         }
     }
+
+    // ... C, D, E, etc.
 }

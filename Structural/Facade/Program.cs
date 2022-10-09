@@ -1,9 +1,30 @@
-﻿namespace Jarai.Patterns.Structural.Facade
+﻿using System;
+
+namespace Jarai.Patterns.Structural.Facade
 {
-    internal class Program
+    /// <summary>
+    /// Facade Design Pattern
+    /// </summary>
+
+    public class Program
     {
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            // Facade
+
+            var mortgage = new Mortgage();
+
+            // Evaluate mortgage eligibility for customer
+
+            var customer = new Customer("Ann McKinsey");
+            var eligible = mortgage.IsEligible(customer, 125000);
+
+            Console.WriteLine("\n" + customer.Name +
+                    " has been " + (eligible ? "Approved" : "Rejected"));
+
+            // Wait for user
+
+            Console.ReadKey();
         }
     }
 }

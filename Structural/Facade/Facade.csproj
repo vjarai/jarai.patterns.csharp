@@ -48,9 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="_ReadMe\ClassDiagram1.cd" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="_ReadMe\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

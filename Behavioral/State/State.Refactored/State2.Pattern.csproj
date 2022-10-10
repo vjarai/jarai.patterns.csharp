@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{975CE53C-335D-42CC-943C-10A316BCD21D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>ServiceLocator.AntiPattern</RootNamespace>
-    <AssemblyName>ServiceLocator.AntiPattern</AssemblyName>
+    <ProjectGuid>{8E873551-1912-443F-89CD-05304156DBA1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jarai.Refactoring.State.Refactored</RootNamespace>
+    <AssemblyName>Jarai.Refactoring.State.Refactored</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,13 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Abgehoben.cs" />
+    <Compile Include="Aufgelegt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiceLocator.cs" />
+    <Compile Include="Telefon.cs" />
+    <Compile Include="TelefonZustand.cs" />
+    <Compile Include="Verbunden.cs" />
+    <Compile Include="Zustand.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="_ReadMe\ClassDiagramm.cd" />
+    <None Include="_ReadMe\ClassDiagram1.cd" />
+    <None Include="_ReadMe\Telefonzustand.pdf" />
+    <None Include="_ReadMe\zustand.pdf" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

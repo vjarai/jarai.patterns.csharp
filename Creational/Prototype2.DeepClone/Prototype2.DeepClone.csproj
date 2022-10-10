@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6CF01842-6218-4D50-B7E1-A0B31273FD57}</ProjectGuid>
+    <ProjectGuid>{9548B407-7871-44CD-BEE6-E4713A80A529}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Jarai.Patterns.Creational.Prototype</RootNamespace>
-    <AssemblyName>Jarai.Patterns.Creational.Prototype</AssemblyName>
+    <RootNamespace>Jarai.Patterns.Creational.Prototype.DeepClone</RootNamespace>
+    <AssemblyName>Jarai.Patterns.Creational.Prototype.DeepClone</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConcretePrototype1.cs" />
-    <Compile Include="ConcretePrototype2.cs" />
+    <Compile Include="Address.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Prototype.cs" />
+    <Compile Include="SystemExtension.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
     <None Include="_ReadMe\ClassDiagram1.cd" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\xunit.runner.visualstudio.2.4.3\build\net452\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.4.3\build\net452\xunit.runner.visualstudio.props')" />
-  <Import Project="..\packages\xunit.core.2.4.1\build\xunit.core.props" Condition="Exists('..\packages\xunit.core.2.4.1\build\xunit.core.props')" />
+  <Import Project="..\..\packages\xunit.core.2.4.2\build\xunit.core.props" Condition="Exists('..\..\packages\xunit.core.2.4.2\build\xunit.core.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C9CEBEC9-0F82-49DF-901A-F4997BBC9931}</ProjectGuid>
+    <ProjectGuid>{78B061FA-C64D-4E48-A1A8-EDC2A3EF3B43}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jarai.Refactoring.State.Refactored.Tests</RootNamespace>
-    <AssemblyName>Jarai.Refactoring.State.Refactored.Tests</AssemblyName>
+    <RootNamespace>Jarai.Patterns.Creational.Prototype.DeepClone.Tests</RootNamespace>
+    <AssemblyName>Jarai.Patterns.Creational.Prototype.DeepClone.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -18,6 +17,7 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -40,13 +40,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\xunit.abstractions.2.0.3\lib\net35\xunit.abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="xunit.assert, Version=2.4.2.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\State.Original.Tests\bin\Debug\xunit.assert.dll</HintPath>
+      <HintPath>..\..\packages\xunit.assert.2.4.2\lib\netstandard1.1\xunit.assert.dll</HintPath>
     </Reference>
     <Reference Include="xunit.core, Version=2.4.2.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\State.Original.Tests\bin\Debug\xunit.core.dll</HintPath>
+      <HintPath>..\..\packages\xunit.extensibility.core.2.4.2\lib\net452\xunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.execution.desktop, Version=2.4.2.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\xunit.extensibility.execution.2.4.2\lib\net452\xunit.execution.desktop.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Choose>
@@ -59,16 +63,20 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TelefonTests.cs" />
+    <Compile Include="UserTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Prototype2.DeepClone\Prototype2.DeepClone.csproj">
+      <Project>{9548B407-7871-44CD-BEE6-E4713A80A529}</Project>
+      <Name>Prototype2.DeepClone</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\State.Refactored\State2.Pattern.csproj">
-      <Project>{8E873551-1912-443F-89CD-05304156DBA1}</Project>
-      <Name>State2.Pattern</Name>
-    </ProjectReference>
+    <Analyzer Include="..\..\packages\xunit.analyzers.1.0.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
+    <Analyzer Include="..\..\packages\xunit.analyzers.1.0.0\analyzers\dotnet\cs\xunit.analyzers.fixes.dll" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
@@ -90,7 +98,14 @@
   </Choose>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\xunit.core.2.4.1\build\xunit.core.targets" Condition="Exists('..\packages\xunit.core.2.4.1\build\xunit.core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\xunit.core.2.4.2\build\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\xunit.core.2.4.2\build\xunit.core.props'))" />
+    <Error Condition="!Exists('..\..\packages\xunit.core.2.4.2\build\xunit.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\xunit.core.2.4.2\build\xunit.core.targets'))" />
+  </Target>
+  <Import Project="..\..\packages\xunit.core.2.4.2\build\xunit.core.targets" Condition="Exists('..\..\packages\xunit.core.2.4.2\build\xunit.core.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

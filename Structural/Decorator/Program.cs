@@ -1,21 +1,33 @@
 ﻿using System;
 
-namespace Jarai.Patterns.Structural.Decorator
+namespace Decorator.RealWorld
 {
-    internal class Program
+    /// <summary>
+    ///     Decorator Design Pattern
+    /// </summary>
+    public class Program
     {
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            var originalAuto = new Auto();
+            var book = new Book("Worley", "Inside ASP.NET", 10);
+            book.Display();
 
-            Auto autoProxy = new LoggingAutoProxy(originalAuto);
+            var video = new Video("Spielberg", "Jaws", 23, 92);
+            video.Display();
 
-            autoProxy.Fahren(100);
-            autoProxy.Fahren(222);
+            // Make video borrowable, then borrow and display
 
-            originalAuto.StreckeAusgeben();
+            Console.WriteLine("\nMaking video borrowable:");
 
-            Console.Read();
+            var borrowvideo = new Borrowable(video);
+            borrowvideo.BorrowItem("Customer #1");
+            borrowvideo.BorrowItem("Customer #2");
+
+            borrowvideo.Display();
+
+            // Wait for user
+
+            Console.ReadKey();
         }
     }
 }

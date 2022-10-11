@@ -1,29 +1,21 @@
 ﻿using System;
 
-namespace Jarai.Patterns.Structural.Proxy
+namespace Jarai.Patterns.Structural.Decorator
 {
-    /// <summary>
-    /// Proxy Design Pattern
-    /// </summary>
-
-    public class Program
+    internal class Program
     {
-        public static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            // Create math proxy
+            var originalAuto = new Auto();
 
-            var mathProxy = new MathProxy(new Math());
+            Auto autoProxy = new LoggingAutoProxy(originalAuto);
 
-            // Do the math
+            autoProxy.Fahren(100);
+            autoProxy.Fahren(222);
 
-            Console.WriteLine("4 + 2 = " + mathProxy.Add(4, 2));
-            Console.WriteLine("4 - 2 = " + mathProxy.Sub(4, 2));
-            Console.WriteLine("4 * 2 = " + mathProxy.Mul(4, 2));
-            Console.WriteLine("4 / 2 = " + mathProxy.Div(4, 2));
+            originalAuto.StreckeAusgeben();
 
-            // Wait for user
-
-            Console.ReadKey();
+            Console.Read();
         }
     }
 }

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Jarai.Patterns.Behavioral.Interpreter.Context">
+    <Position X="12.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Behavioral.Interpreter.Expression" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAABAAAAEBAAAAAAAAAgAAIA=</HashCode>
+      <FileName>Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Behavioral.Interpreter.HundredExpression" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAEBAAAAAAAAAgAAIA=</HashCode>
+      <FileName>HundredExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Behavioral.Interpreter.OneExpression" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAEBAAAAAAAAAgAAIA=</HashCode>
+      <FileName>OneExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Behavioral.Interpreter.TenExpression" Collapsed="true">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAEBAAAAAAAAAgAAIA=</HashCode>
+      <FileName>TenExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Behavioral.Interpreter.ThousandExpression" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAEBAAAAAAAAAgAAIA=</HashCode>
+      <FileName>ThousandExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

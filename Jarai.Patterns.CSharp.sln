@@ -53,7 +53,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Structural\Proxy\P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relations", "_Refresher\Relations.csproj", "{AFC757B5-2488-43D9-BDE2-0FCDD2FFBE9D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 Optional", "4 Optional", "{380780F9-E50B-45EC-82A1-A066459BBFAC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 Other", "4 Other", "{380780F9-E50B-45EC-82A1-A066459BBFAC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State1.Prozedural", "Behavioral\State\State.Original\State1.Prozedural.csproj", "{311515D7-738A-4A8B-8EDF-A20918101FD1}"
 EndProject
@@ -82,6 +82,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORMapper", "Other\ORMapper\ORMapper.csproj", "{00875F02-DAD6-4298-92F1-85D40536988A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLocator.AntiPattern", "Other\ServiceLocator.AntiPattern\ServiceLocator.AntiPattern.csproj", "{975CE53C-335D-42CC-943C-10A316BCD21D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interpreter", "Behavioral\Interpreter\Interpreter.csproj", "{726CC393-2826-4EEC-B1AC-D9CD95B484B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -229,6 +231,10 @@ Global
 		{975CE53C-335D-42CC-943C-10A316BCD21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{975CE53C-335D-42CC-943C-10A316BCD21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{975CE53C-335D-42CC-943C-10A316BCD21D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{726CC393-2826-4EEC-B1AC-D9CD95B484B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{726CC393-2826-4EEC-B1AC-D9CD95B484B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{726CC393-2826-4EEC-B1AC-D9CD95B484B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{726CC393-2826-4EEC-B1AC-D9CD95B484B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -269,6 +275,7 @@ Global
 		{C869CC64-6009-4A8E-9831-C5D4D132E514} = {380780F9-E50B-45EC-82A1-A066459BBFAC}
 		{00875F02-DAD6-4298-92F1-85D40536988A} = {380780F9-E50B-45EC-82A1-A066459BBFAC}
 		{975CE53C-335D-42CC-943C-10A316BCD21D} = {380780F9-E50B-45EC-82A1-A066459BBFAC}
+		{726CC393-2826-4EEC-B1AC-D9CD95B484B3} = {F4AFB136-9B2D-4375-AA19-C7DE22CEF927}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4932A8B6-D7D9-4C61-AB81-2F4B361E7C4D}

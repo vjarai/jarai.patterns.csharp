@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{01503A0F-FA51-4C83-A260-7E61D6B23101}</ProjectGuid>
+    <ProjectGuid>{726CC393-2826-4EEC-B1AC-D9CD95B484B3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Jarai.Patterns.Structural.Proxy</RootNamespace>
-    <AssemblyName>Jarai.Patterns.Structural.Proxy</AssemblyName>
+    <RootNamespace>Jarai.Patterns.Behavioral.Interpreter</RootNamespace>
+    <AssemblyName>Jarai.Patterns.Behavioral.Interpreter</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,15 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Auto.cs" />
-    <Compile Include="LoggingAutoProxy.cs" />
+    <Compile Include="Context.cs" />
+    <Compile Include="Expression.cs" />
+    <Compile Include="HundredExpression.cs" />
+    <Compile Include="OneExpression.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TenExpression.cs" />
+    <Compile Include="ThousandExpression.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="_ReadMe\ClassDiagram1.cd" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

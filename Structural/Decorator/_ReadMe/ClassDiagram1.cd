@@ -1,42 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Bridge.Structural.ConcreteImplementorA">
-    <Position X="5.75" Y="3" Width="1.5" />
+  <Class Name="Decorator.RealWorld.Book">
+    <Position X="1.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>ConcreteImplementorA.cs</FileName>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Book.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Bridge.Structural.ConcreteImplementorB">
-    <Position X="7.75" Y="3" Width="1.5" />
+  <Class Name="Decorator.RealWorld.Borrowable">
+    <Position X="6.25" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>ConcreteImplementorB.cs</FileName>
+      <HashCode>CAAAAAAAAAAQAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Borrowable.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Bridge.Structural.Implementor">
-    <Position X="6.5" Y="0.75" Width="1.5" />
+  <Class Name="Decorator.RealWorld.Decorator">
+    <Position X="6.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>Implementor.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Bridge.Structural.RefinedAbstraction">
-    <Position X="2.25" Y="3" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>RefinedAbstraction.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Bridge.Structural.Abstraction">
-    <Position X="2.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAEACAAAAAA=</HashCode>
-      <FileName>Abstraction.cs</FileName>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Decorator.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="_implementor" />
+      <Field Name="libraryItem" />
     </ShowAsAssociation>
+  </Class>
+  <Class Name="Decorator.RealWorld.LibraryItem">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>LibraryItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Decorator.RealWorld.Video">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAQAAQAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Video.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

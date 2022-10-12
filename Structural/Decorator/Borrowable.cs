@@ -8,7 +8,7 @@ namespace Decorator.RealWorld
     /// </summary>
     public class Borrowable : Decorator
     {
-        protected readonly List<string> borrowers = new List<string>();
+        protected readonly List<string> Borrowers = new List<string>();
 
         // Constructor
 
@@ -19,21 +19,21 @@ namespace Decorator.RealWorld
 
         public void BorrowItem(string name)
         {
-            borrowers.Add(name);
-            libraryItem.NumCopies--;
+            Borrowers.Add(name);
+            LibraryItem.NumCopies--;
         }
 
         public void ReturnItem(string name)
         {
-            borrowers.Remove(name);
-            libraryItem.NumCopies++;
+            Borrowers.Remove(name);
+            LibraryItem.NumCopies++;
         }
 
         public override void Display()
         {
             base.Display();
 
-            foreach (var borrower in borrowers) Console.WriteLine(" borrower: " + borrower);
+            foreach (var borrower in Borrowers) Console.WriteLine(" borrower: " + borrower);
         }
     }
 }

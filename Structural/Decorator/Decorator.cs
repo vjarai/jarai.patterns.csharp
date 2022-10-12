@@ -5,18 +5,18 @@
     /// </summary>
     public abstract class Decorator : LibraryItem
     {
-        protected LibraryItem libraryItem;
+        protected LibraryItem LibraryItem;
 
         // Constructor
 
         public Decorator(LibraryItem libraryItem)
         {
-            this.libraryItem = libraryItem;
+            this.LibraryItem = libraryItem;
         }
 
         public override void Display()
         {
-            libraryItem.Display();
+            LibraryItem.Display();
         }
     }
 }

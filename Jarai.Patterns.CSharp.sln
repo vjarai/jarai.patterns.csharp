@@ -85,6 +85,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLocator.AntiPattern"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interpreter", "Behavioral\Interpreter\Interpreter.csproj", "{726CC393-2826-4EEC-B1AC-D9CD95B484B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyLoad", "Other\LazyLoad\LazyLoad.csproj", "{7276709A-1287-43D6-94A8-7BA129886109}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -235,6 +237,10 @@ Global
 		{726CC393-2826-4EEC-B1AC-D9CD95B484B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{726CC393-2826-4EEC-B1AC-D9CD95B484B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{726CC393-2826-4EEC-B1AC-D9CD95B484B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7276709A-1287-43D6-94A8-7BA129886109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7276709A-1287-43D6-94A8-7BA129886109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7276709A-1287-43D6-94A8-7BA129886109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7276709A-1287-43D6-94A8-7BA129886109}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -276,6 +282,7 @@ Global
 		{00875F02-DAD6-4298-92F1-85D40536988A} = {380780F9-E50B-45EC-82A1-A066459BBFAC}
 		{975CE53C-335D-42CC-943C-10A316BCD21D} = {380780F9-E50B-45EC-82A1-A066459BBFAC}
 		{726CC393-2826-4EEC-B1AC-D9CD95B484B3} = {F4AFB136-9B2D-4375-AA19-C7DE22CEF927}
+		{7276709A-1287-43D6-94A8-7BA129886109} = {380780F9-E50B-45EC-82A1-A066459BBFAC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4932A8B6-D7D9-4C61-AB81-2F4B361E7C4D}

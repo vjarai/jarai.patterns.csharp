@@ -7,27 +7,27 @@ namespace Decorator.RealWorld
     /// </summary>
     public class Video : LibraryItem
     {
-        private readonly string director;
-        private readonly int playTime;
-        private readonly string title;
+        private readonly string _director;
+        private readonly int _playTime;
+        private readonly string _title;
 
         // Constructor
 
         public Video(string director, string title, int numCopies, int playTime)
         {
-            this.director = director;
-            this.title = title;
+            this._director = director;
+            this._title = title;
             NumCopies = numCopies;
-            this.playTime = playTime;
+            this._playTime = playTime;
         }
 
         public override void Display()
         {
             Console.WriteLine("\nVideo ----- ");
-            Console.WriteLine(" Director: {0}", director);
-            Console.WriteLine(" Title: {0}", title);
+            Console.WriteLine(" Director: {0}", _director);
+            Console.WriteLine(" Title: {0}", _title);
             Console.WriteLine(" # Copies: {0}", NumCopies);
-            Console.WriteLine(" Playtime: {0}\n", playTime);
+            Console.WriteLine(" Playtime: {0}\n", _playTime);
         }
     }
 }

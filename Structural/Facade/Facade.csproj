@@ -43,12 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bank.cs" />
-    <Compile Include="Credit.cs" />
-    <Compile Include="Customer.cs" />
-    <Compile Include="Loan.cs" />
-    <Compile Include="Mortgage.cs" />
+    <Compile Include="Amplifier.cs" />
+    <Compile Include="Screen.cs" />
+    <Compile Include="TheaterLights.cs" />
+    <Compile Include="Tuner.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="CdPlayer.cs" />
+    <Compile Include="DvdPlayer.cs" />
+    <Compile Include="PopcornPopper.cs" />
+    <Compile Include="Projector.cs" />
+    <Compile Include="HomeTheaterFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

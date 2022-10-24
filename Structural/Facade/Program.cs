@@ -1,30 +1,29 @@
-﻿using System;
+﻿
+using System;
 
 namespace Jarai.Patterns.Structural.Facade
 {
-    /// <summary>
-    /// Facade Design Pattern
-    /// </summary>
-
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main(String[] args)
         {
-            // Facade
+            Amplifier amp = new Amplifier("Top-O-Line Amplifier");
+            Tuner tuner = new Tuner("Top-O-Line AM/FM Tuner", amp);
+            DvdPlayer dvd = new DvdPlayer("Top-O-Line DVD Player", amp);
+            CdPlayer cd = new CdPlayer("Top-O-Line CD Player", amp);
+            Projector projector = new Projector("Top-O-Line Projector", dvd);
+            TheaterLights lights = new TheaterLights("Theater Ceiling Lights");
+            Screen screen = new Screen("Theater Screen");
+            PopcornPopper popper = new PopcornPopper("Popcorn Popper");
 
-            var mortgage = new Mortgage();
+            HomeTheaterFacade homeTheater =
+                new HomeTheaterFacade(amp, tuner, dvd, cd,
+                    projector, screen, lights, popper);
 
-            // Evaluate mortgage eligibility for customer
+            homeTheater.WatchMovie("Raiders of the Lost Ark");
+            homeTheater.EndMovie();
 
-            var customer = new Customer("Ann McKinsey");
-            var eligible = mortgage.IsEligible(customer, 125000);
-
-            Console.WriteLine("\n" + customer.Name +
-                    " has been " + (eligible ? "Approved" : "Rejected"));
-
-            // Wait for user
-
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
 }

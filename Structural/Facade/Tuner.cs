@@ -4,13 +4,13 @@ namespace Jarai.Patterns.Structural.Facade
 {
     public class Tuner
     {
-        String _description;
+        readonly String _description;
         Amplifier _amplifier;
         double _frequency;
 
         public Tuner(String description, Amplifier amplifier)
         {
-            this._description = description;
+            _description = description;
         }
 
         public void On()
@@ -26,7 +26,7 @@ namespace Jarai.Patterns.Structural.Facade
         public void SetFrequency(double frequency)
         {
             Console.WriteLine(_description + " setting frequency to " + frequency);
-            this._frequency = frequency;
+            _frequency = frequency;
         }
 
         public void SetAm()

@@ -4,15 +4,15 @@ namespace Jarai.Patterns.Structural.Facade
 {
     public class DvdPlayer
     {
-        String _description;
+        readonly String _description;
         int _currentTrack;
         Amplifier _amplifier;
         String _movie;
 
         public DvdPlayer(String description, Amplifier amplifier)
         {
-            this._description = description;
-            this._amplifier = amplifier;
+            _description = description;
+            _amplifier = amplifier;
         }
 
         public void On()
@@ -33,7 +33,7 @@ namespace Jarai.Patterns.Structural.Facade
 
         public void Play(String movie)
         {
-            this._movie = movie;
+            _movie = movie;
             _currentTrack = 0;
             Console.WriteLine(_description + " playing \"" + movie + "\"");
         }

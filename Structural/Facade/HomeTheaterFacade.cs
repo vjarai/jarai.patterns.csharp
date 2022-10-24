@@ -4,14 +4,14 @@ namespace Jarai.Patterns.Structural.Facade
 {
     public class HomeTheaterFacade
     {
-        Amplifier _amp;
-        Tuner _tuner;
-        DvdPlayer _dvd;
-        CdPlayer _cd;
-        Projector _projector;
-        TheaterLights _lights;
-        Screen _screen;
-        PopcornPopper _popper;
+        readonly Amplifier _amp;
+        readonly Tuner _tuner;
+        readonly DvdPlayer _dvd;
+        readonly CdPlayer _cd;
+        readonly Projector _projector;
+        readonly TheaterLights _lights;
+        readonly Screen _screen;
+        readonly PopcornPopper _popper;
 
         public HomeTheaterFacade(Amplifier amp,
             Tuner tuner,
@@ -23,14 +23,14 @@ namespace Jarai.Patterns.Structural.Facade
             PopcornPopper popper)
         {
 
-            this._amp = amp;
-            this._tuner = tuner;
-            this._dvd = dvd;
-            this._cd = cd;
-            this._projector = projector;
-            this._screen = screen;
-            this._lights = lights;
-            this._popper = popper;
+            _amp = amp;
+            _tuner = tuner;
+            _dvd = dvd;
+            _cd = cd;
+            _projector = projector;
+            _screen = screen;
+            _lights = lights;
+            _popper = popper;
         }
 
         public void WatchMovie(String movie)

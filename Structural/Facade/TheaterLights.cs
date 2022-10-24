@@ -6,11 +6,11 @@ namespace Jarai.Patterns.Structural.Facade
 {
     public class TheaterLights
     {
-        String _description;
+        readonly String _description;
 
         public TheaterLights(String description)
         {
-            this._description = description;
+            _description = description;
         }
 
         public void On()

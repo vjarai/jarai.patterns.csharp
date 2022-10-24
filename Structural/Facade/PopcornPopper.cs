@@ -4,11 +4,11 @@ namespace Jarai.Patterns.Structural.Facade
 {
     public class PopcornPopper
     {
-        String _description;
+        readonly String _description;
 
         public PopcornPopper(String description)
         {
-            this._description = description;
+            _description = description;
         }
 
         public void On()

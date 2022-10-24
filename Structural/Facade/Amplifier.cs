@@ -6,14 +6,14 @@ namespace Jarai.Patterns.Structural.Facade
 {
     public class Amplifier
     {
-        String _description;
+        readonly String _description;
         Tuner _tuner;
         DvdPlayer _dvd;
         CdPlayer _cd;
 
         public Amplifier(String description)
         {
-            this._description = description;
+            _description = description;
         }
 
         public void On()
@@ -44,19 +44,19 @@ namespace Jarai.Patterns.Structural.Facade
         public void SetTuner(Tuner tuner)
         {
             Console.WriteLine(_description + " setting tuner to " + _dvd);
-            this._tuner = tuner;
+            _tuner = tuner;
         }
 
         public void SetDvd(DvdPlayer dvd)
         {
             Console.WriteLine(_description + " setting DVD player to " + dvd);
-            this._dvd = dvd;
+            _dvd = dvd;
         }
 
         public void SetCd(CdPlayer cd)
         {
             Console.WriteLine(_description + " setting CD player to " + cd);
-            this._cd = cd;
+            _cd = cd;
         }
 
         public override String ToString()

@@ -4,11 +4,11 @@ namespace Jarai.Patterns.Structural.Facade
 {
     public class Screen
     {
-        String _description;
+        readonly String _description;
 
         public Screen(String description)
         {
-            this._description = description;
+            _description = description;
         }
 
         public void Up()

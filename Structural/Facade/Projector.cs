@@ -5,13 +5,13 @@ namespace Jarai.Patterns.Structural.Facade
 {
     public class Projector
     {
-        String _description;
+        readonly String _description;
         DvdPlayer _dvdPlayer;
 
         public Projector(String description, DvdPlayer dvdPlayer)
         {
-            this._description = description;
-            this._dvdPlayer = dvdPlayer;
+            _description = description;
+            _dvdPlayer = dvdPlayer;
         }
 
         public void On()

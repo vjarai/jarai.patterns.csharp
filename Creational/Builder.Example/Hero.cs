@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Builder.Example
+namespace Jarai.Patterns.Creational.Builder
 {
     public partial class Hero
     {
@@ -44,7 +44,7 @@ namespace Builder.Example
                 {
                     sb.Append(HairType).Append(' ');
                 }
-                sb.Append((HairType != Example.HairType.Bald) ? "hair" : "head");
+                sb.Append((HairType != Creational.Builder.HairType.Bald) ? "hair" : "head");
             }
             if (Armor != null)
             {

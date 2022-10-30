@@ -1,4 +1,4 @@
-﻿namespace Builder.Example
+﻿namespace Jarai.Patterns.Creational.Builder
 {
     public enum HairType
     {

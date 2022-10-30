@@ -22,7 +22,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Jarai.Patterns.Structural.Facade.HomeTheaterFacade">
-    <Position X="13.25" Y="3.5" Width="2" />
+    <Position X="13.75" Y="4.25" Width="2" />
     <TypeIdentifier>
       <HashCode>IBgAAAAABAAAgYAAAAAAAAggAEAAAAAgAAAAAAABAgg=</HashCode>
       <FileName>HomeTheaterFacade.cs</FileName>

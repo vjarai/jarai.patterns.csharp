@@ -64,12 +64,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\State.Original\State1.Prozedural.csproj">
-      <Project>{311515D7-738A-4A8B-8EDF-A20918101FD1}</Project>
-      <Name>State1.Prozedural</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

@@ -31,7 +31,7 @@ namespace Jarai.Patterns.Behavioral.TemplateMethod
         {
             Console.WriteLine("Categories ---- ");
 
-            for (int i = 0; i < top; i++)
+            for (var i = 0; i < top; i++)
             {
                 Console.WriteLine(categories[i]);
             }

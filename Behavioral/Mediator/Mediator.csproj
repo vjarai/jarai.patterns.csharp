@@ -43,11 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractChatroom.cs" />
-    <Compile Include="Beatle.cs" />
-    <Compile Include="Chatroom.cs" />
-    <Compile Include="NonBeatle.cs" />
-    <Compile Include="Participant.cs" />
+    <Compile Include="Airliner.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="Sailplane.cs" />
+    <Compile Include="Tower.cs" />
+    <Compile Include="Helicopter.cs" />
+    <Compile Include="Plane.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

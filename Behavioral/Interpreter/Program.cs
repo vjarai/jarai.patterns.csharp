@@ -11,12 +11,12 @@ namespace Jarai.Patterns.Behavioral.Interpreter
     {
         public static void Main(string[] args)
         {
-            string roman = "MCMXXVIII";
-            Context context = new Context(roman);
+            var roman = "MCMXXVIII";
+            var context = new Context(roman);
 
             // Build the 'parse tree'
 
-            List<Expression> tree = new List<Expression>();
+            var tree = new List<Expression>();
             tree.Add(new ThousandExpression());
             tree.Add(new HundredExpression());
             tree.Add(new TenExpression());
@@ -24,7 +24,7 @@ namespace Jarai.Patterns.Behavioral.Interpreter
 
             // Interpret
 
-            foreach (Expression exp in tree)
+            foreach (var exp in tree)
             {
                 exp.Interpret(context);
             }

@@ -27,7 +27,7 @@ namespace Jarai.Patterns.Creational.Builder
         public override String ToString()
         {
 
-            StringBuilder sb = new StringBuilder();
+            var sb = new StringBuilder();
             sb.Append("This is a ")
                 .Append(Profession)
                 .Append(" named ")

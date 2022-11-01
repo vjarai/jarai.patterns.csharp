@@ -10,14 +10,14 @@ namespace Jarai.Patterns.Behavioral.Memento
     {
         public static void Main(string[] args)
         {
-            SalesProspect s = new SalesProspect();
+            var s = new SalesProspect();
             s.Name = "Noel van Halen";
             s.Phone = "(412) 256-0990";
             s.Budget = 25000.0;
 
             // Store internal state
 
-            ProspectMemory m = new ProspectMemory();
+            var m = new ProspectMemory();
             m.Memento = s.SaveMemento();
 
             // Continue changing originator

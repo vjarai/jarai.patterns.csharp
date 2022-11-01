@@ -10,33 +10,28 @@ namespace Jarai.Patterns.Behavioral.Mediator
     {
         public static void Main(string[] args)
         {
-            // Create chatroom
+            // Create tower
 
-            Chatroom chatroom = new Chatroom();
+            var tower = new Tower("Tower");
 
-            // Create participants and register them
+            Plane airliner = new Airliner("Airliner");
+            Plane helicopter = new Helicopter("Helicopter");
+            Plane sailplane = new Sailplane("Sailplane");
 
-            Participant george = new Beatle("George");
-            Participant paul = new Beatle("Paul");
-            Participant ringo = new Beatle("Ringo");
-            Participant john = new Beatle("John");
-            Participant yoko = new NonBeatle("Yoko");
+            airliner.Connect(tower);
+            helicopter.Connect(tower);
+            sailplane.Connect(tower);
 
-            chatroom.Register(george);
-            chatroom.Register(paul);
-            chatroom.Register(ringo);
-            chatroom.Register(john);
-            chatroom.Register(yoko);
+            helicopter.Send("Request Landing");
+            tower.Send(helicopter.Name, "Cleared to Land");
+            helicopter.Send("Roger, Cleared to Land");
+            helicopter.Send("Runway vacated.");
 
-            // Chatting participants
-
-            yoko.Send("John", "Hi John!");
-            paul.Send("Ringo", "All you need is love");
-            ringo.Send("George", "My sweet Lord");
-            paul.Send("John", "Can't buy me love");
-            john.Send("Yoko", "My sweet love");
-
-            // Wait for user
+            airliner.Send("Ready for departure");
+            tower.Send(airliner.Name, "Cleared for takeoff");
+            airliner.Send("Roger, Cleared for takeoff");
+            airliner.Send("Request Leaving frequency");
+            tower.Send(airliner.Name, "Roger, Frequency change approved");
 
             Console.ReadKey();
         }

@@ -11,18 +11,18 @@ namespace Jarai.Patterns.Behavioral.Mediator
     public class Tower
     {
         public string Name { get; }
-        private readonly Dictionary<string, Plane> _acceptedPlanes = new Dictionary<string, Plane>();
+        private readonly Dictionary<string, Plane> _registeredPlanes = new Dictionary<string, Plane>();
 
         public Tower(string name)
         {
             Name = name;
         }
 
-        public void Accept(Plane plane)
+        public void Register(Plane plane)
         {
-            if (!_acceptedPlanes.ContainsKey(plane.Name))
+            if (!_registeredPlanes.ContainsKey(plane.Name))
             {
-                _acceptedPlanes.Add(plane.Name, plane);
+                _registeredPlanes.Add(plane.Name, plane);
             }
 
             plane.Tower = this;
@@ -38,7 +38,7 @@ namespace Jarai.Patterns.Behavioral.Mediator
 
         private void Send(Message message)
         {
-            foreach (var plane in _acceptedPlanes)
+            foreach (var plane in _registeredPlanes)
             {
                 if (plane.Value.Name != message.From)
                     plane.Value.Receive(message);

@@ -20,7 +20,7 @@ namespace Jarai.Patterns.Behavioral.Mediator
         public void Connect(Tower tower)
         {
             Tower = tower;
-            Tower.Accept(this);
+            Tower.Register(this);
         }
 
 

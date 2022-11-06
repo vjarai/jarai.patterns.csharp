@@ -29,8 +29,10 @@ namespace Jarai.Patterns.Creational.Builder
         public static void Main(string[] args)
         {
             var mage =
-                new Hero.Builder(Profession.Mage, "Riobard").WithHairColor(HairColor.Black)
-                    .WithWeapon(Weapon.Dagger).Build();
+                new Hero.Builder(Profession.Mage, "Riobard")
+                    .WithHairColor(HairColor.Black)
+                    .WithWeapon(Weapon.Dagger)
+                    .Build();
 
             Console.WriteLine(mage);
 

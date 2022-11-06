@@ -1,51 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Builder.Example.Hero">
-    <Position X="9.5" Y="0.75" Width="2.5" />
+  <Class Name="Jarai.Patterns.Creational.Builder.Hero">
+    <Position X="8" Y="1.5" Width="2.5" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <NestedTypes>
-      <Class Name="Builder.Example.Hero.Builder">
+      <Class Name="Jarai.Patterns.Creational.Builder.Hero.Builder">
         <TypeIdentifier>
           <NewMemberFileName>Hero.cs</NewMemberFileName>
         </TypeIdentifier>
       </Class>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAAAAAAAMAAAAAAAAAAAAAAgAEAAgAQAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAMAAAAAAQAAAAAAAgAEAAgAQAAAAA=</HashCode>
       <FileName>Hero.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Enum Name="Builder.Example.Armor" Collapsed="true">
-    <Position X="1" Y="2.25" Width="1.5" />
+  <Enum Name="Jarai.Patterns.Creational.Builder.Armor">
+    <Position X="1" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAIAEgAAAAAAAAAA=</HashCode>
       <FileName>Armor.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="Builder.Example.HairColor" Collapsed="true">
-    <Position X="2.75" Y="2.25" Width="1.5" />
+  <Enum Name="Jarai.Patterns.Creational.Builder.HairColor">
+    <Position X="2.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAAAAAIgAAAAAAAAAABAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>HairColor.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="Builder.Example.HairType" Collapsed="true">
-    <Position X="4.5" Y="2.25" Width="1.5" />
+  <Enum Name="Jarai.Patterns.Creational.Builder.HairType">
+    <Position X="4.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAACCAAACAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
       <FileName>HairType.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="Builder.Example.Profession" Collapsed="true">
+  <Enum Name="Jarai.Patterns.Creational.Builder.Profession">
     <Position X="1" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAAAAIAAAAAAAAAAAAAAAAAAAAAAQAAAAAAIAAAA=</HashCode>
       <FileName>Profession.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="Builder.Example.Weapon" Collapsed="true">
+  <Enum Name="Jarai.Patterns.Creational.Builder.Weapon">
     <Position X="2.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAAAQAAAAAAAAAIAIAAAAAAAAAAAACAAA=</HashCode>

@@ -39,7 +39,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Structural\Com
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Structural\Decorator\Decorator.csproj", "{E3EC747C-216B-4043-ACE7-48139F817112}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade.Example", "Structural\Facade\Facade.Example.csproj", "{C8D8EC5B-E5F6-484C-984E-5D2E4467264E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Structural\Facade\Facade.csproj", "{C8D8EC5B-E5F6-484C-984E-5D2E4467264E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flyweigth", "Structural\Flyweigth\Flyweigth.csproj", "{1FCD3959-242C-40C4-8E92-13E5CE92D6E1}"
 EndProject

@@ -9,7 +9,17 @@ namespace Jarai.Patterns.Creational.Prototype.ShallowClone
     {
         public static void Main(string[] args)
         {
-          
+            var user = new User
+            {
+                FirstName = "Fritz",
+                LastName = "Fröhlich",
+                Address = new Address
+                {
+                    City = "Frankfurt",
+                    Street = "Teststrasse",
+                    Country = "DE"
+                }
+            };
 
             // Wait for user
             Console.ReadKey();

@@ -42,7 +42,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Jarai.Patterns.Behavioral.Mediator.Message">
-    <Position X="10.5" Y="2.25" Width="2" />
+    <Position X="8.5" Y="2.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AgAAAAAAAAAAAAAEAAAAAAAAAAAIAAAAAAAACAAAAAA=</HashCode>
       <FileName>Message.cs</FileName>

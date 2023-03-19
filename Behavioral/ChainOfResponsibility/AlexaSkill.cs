@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 
 namespace Jarai.Patterns.Behavioral.ChainOfResponsibilty
 {
@@ -9,13 +6,13 @@ namespace Jarai.Patterns.Behavioral.ChainOfResponsibilty
     {
         protected string GetFirstWordAfter(string request, string token, string defaultValue)
         {
-            return request.ToLower().Split(' ').SkipWhile( w => w != token.ToLower()).Skip(1).FirstOrDefault() ?? defaultValue;
+            return request.ToLower().Split(' ').SkipWhile(w => w != token.ToLower()).Skip(1).FirstOrDefault() ??
+                   defaultValue;
         }
 
         public abstract bool CanHandleRequest(string request);
 
 
         public abstract void HandleRequest(string request);
-
     }
 }

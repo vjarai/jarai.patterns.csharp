@@ -2,7 +2,7 @@
 
 namespace Jarai.Patterns.Behavioral.ChainOfResponsibilty
 {
-    public class RadioSkill : AlexaSkill
+    public class RadioSkill : RequestHandler
     {
         public override bool CanHandleRequest(string request)
         {
@@ -11,7 +11,7 @@ namespace Jarai.Patterns.Behavioral.ChainOfResponsibilty
 
         public override void HandleRequest(string request)
         {
-            var parameter = GetFirstWordAfter(request, "Radio", "<DefaultSender>");
+            var parameter = GetParameter(request, "Radio", "<DefaultSender>");
 
             Console.WriteLine($"Ich spiele den Radiosender '{parameter}'.");
         }

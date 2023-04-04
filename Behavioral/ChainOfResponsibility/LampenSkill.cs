@@ -2,7 +2,7 @@
 
 namespace Jarai.Patterns.Behavioral.ChainOfResponsibilty
 {
-    public class LampenSkill : AlexaSkill
+    public class LampenSkill : RequestHandler
     {
         public override bool CanHandleRequest(string request)
         {
@@ -11,7 +11,7 @@ namespace Jarai.Patterns.Behavioral.ChainOfResponsibilty
 
         public override void HandleRequest(string request)
         {
-            var parameter = GetFirstWordAfter(request, "Licht", "<DefaultLampe>");
+            var parameter = GetParameter(request, "Licht", "<DefaultLampe>");
             Console.WriteLine($"Schalte Lampe {parameter} ein.");
         }
     }

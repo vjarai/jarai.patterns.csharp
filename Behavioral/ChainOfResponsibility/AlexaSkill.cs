@@ -2,9 +2,9 @@
 
 namespace Jarai.Patterns.Behavioral.ChainOfResponsibilty
 {
-    public abstract class AlexaSkill
+    public abstract class RequestHandler : IAlexaSkill
     {
-        protected string GetFirstWordAfter(string request, string token, string defaultValue)
+        protected string GetParameter(string request, string token, string defaultValue)
         {
             return request.ToLower().Split(' ').SkipWhile(w => w != token.ToLower()).Skip(1).FirstOrDefault() ??
                    defaultValue;

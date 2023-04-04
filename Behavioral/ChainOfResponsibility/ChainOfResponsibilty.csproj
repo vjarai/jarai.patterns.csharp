@@ -72,6 +72,7 @@
   <ItemGroup>
     <Compile Include="Alexa.cs" />
     <Compile Include="AlexaSkill.cs" />
+    <Compile Include="IAlexaSkill.cs" />
     <Compile Include="LampenSkill.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

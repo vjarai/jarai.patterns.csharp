@@ -6,17 +6,17 @@ namespace Jarai.Patterns.Behavioral.ChainOfResponsibilty
 {
     public class Alexa
     {
-        private List<AlexaSkill> _installedSkills = new List<AlexaSkill>();
+        private List<IAlexaSkill> _installedSkills = new List<IAlexaSkill>();
 
-        public void InstallAllSkills()
+        public void InstallSkills()
         {
             // Erstellt Instanzen von allen Klassen, die von AlexaSkill abgeleitet sind.
             _installedSkills = (from type in GetType().Assembly.GetTypes()
-                where !type.IsAbstract && typeof(AlexaSkill).IsAssignableFrom(type)
-                select (AlexaSkill)Activator.CreateInstance(type)).ToList();
+                where !type.IsAbstract && typeof(IAlexaSkill).IsAssignableFrom(type)
+                select (IAlexaSkill)Activator.CreateInstance(type)).ToList();
         }
 
-        public void InstallSkill(AlexaSkill newSkill)
+        public void InstallSkill(IAlexaSkill newSkill)
         {
             _installedSkills.Add(newSkill);
         }
@@ -27,7 +27,7 @@ namespace Jarai.Patterns.Behavioral.ChainOfResponsibilty
             var requestHandler = _installedSkills.FirstOrDefault(skill => skill.CanHandleRequest(request.ToLower()));
 
             if (requestHandler == null)
-                Console.WriteLine($"Entschuldigung, '{request}' kann ich leider nicht (Fehlt ein Skill?).");
+                Console.WriteLine($"Entschuldigung, '{request}' habe ich leider nicht verstanden (Fehlt ein Skill?).");
             else
                 requestHandler.HandleRequest(request);
         }

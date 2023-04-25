@@ -2,20 +2,20 @@ using System.Diagnostics;
 
 namespace Jarai.Refactoring.State.Refactored
 {
-    public class Verbunden : Zustand
+    public class Verbunden : TelefonZustand
     {
         public Verbunden()
             : base("<Verbindung ist hergestellt>")
         {
         }
 
-        public override Zustand Auflegen()
+        public override TelefonZustand Auflegen()
         {
             Debug.WriteLine("Hörer wird aufgelegt.");
             return new Aufgelegt();
         }
 
-        public override Zustand Sprechen()
+        public override TelefonZustand Sprechen()
         {
             Debug.WriteLine("Es wird gesprochen.");
             return this;

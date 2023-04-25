@@ -5,3 +5,5 @@ and gives more than one object a chance to handle the request.
 This pattern chains the receiving objects and passes the request along the chain until an object handles it.
 
 Frequency of use: medium-low
+
+![image](./chain-of-responsibility.jpg)

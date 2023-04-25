@@ -1,14 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Jarai.Patterns.Structural.Decorator.Auto">
-    <Position X="8.75" Y="1.5" Width="1.5" />
+    <Position X="8.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAgAAAA=</HashCode>
       <FileName>Auto.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Jarai.Patterns.Structural.Decorator.LoggingAutoProxy">
-    <Position X="8.75" Y="4.25" Width="1.75" />
+    <Position X="9" Y="4.25" Width="1.75" />
+    <InheritanceLine Type="Jarai.Patterns.Structural.Decorator.Auto" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="9.875" Y="2.997" />
+        <Point X="9.875" Y="3.287" />
+        <Point X="9.875" Y="3.287" />
+        <Point X="9.875" Y="4.25" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
       <FileName>LoggingAutoProxy.cs</FileName>

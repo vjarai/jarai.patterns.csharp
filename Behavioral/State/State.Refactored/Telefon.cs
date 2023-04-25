@@ -4,7 +4,7 @@ namespace Jarai.Refactoring.State.Refactored
 {
     public class Telefon
     {
-        private Zustand _aktuellerZustand;
+        private TelefonZustand _aktuellerZustand;
 
         public Telefon()
         {
@@ -12,12 +12,12 @@ namespace Jarai.Refactoring.State.Refactored
         }
 
 
-        internal Telefon(Zustand zustand)
+        internal Telefon(TelefonZustand zustand)
         {
             AktuellerZustand = zustand;
         }
 
-        public Zustand AktuellerZustand
+        public TelefonZustand AktuellerZustand
         {
             get
             {

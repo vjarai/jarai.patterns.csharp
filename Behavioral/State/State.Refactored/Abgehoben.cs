@@ -2,20 +2,20 @@ using System.Diagnostics;
 
 namespace Jarai.Refactoring.State.Refactored
 {
-    public class Abgehoben : Zustand
+    public class Abgehoben : TelefonZustand
     {
         public Abgehoben()
             : base("<Hörer ist abgenommen>")
         {
         }
 
-        public override Zustand Auflegen()
+        public override TelefonZustand Auflegen()
         {
             Debug.WriteLine("Hörer wird aufgelegt.");
             return new Aufgelegt();
         }
 
-        public override Zustand Wählen()
+        public override TelefonZustand Wählen()
         {
             Debug.WriteLine("Rufnummer wird gewählt.");
             return new Verbunden();

@@ -43,11 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customers.cs" />
-    <Compile Include="CustomersBase.cs" />
-    <Compile Include="CustomersData.cs" />
-    <Compile Include="DataObject.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -56,6 +51,13 @@
     <None Include="_ReadMe\_ReadMe.md" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="TabletLayout.cs" />
+    <Compile Include="Form.cs" />
+    <Compile Include="GreetingForm.cs" />
+    <Compile Include="InformationForm.cs" />
+    <Compile Include="Layout.cs" />
+    <Compile Include="WindowsLayout.cs" />
     <Content Include="_ReadMe\Description.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

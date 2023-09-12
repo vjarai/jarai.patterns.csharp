@@ -1,34 +1,31 @@
-﻿using System;
-
-namespace Jarai.Patterns.Structural.Bridge
-{
-    /// <summary>
-    ///     Bridge Design Pattern
-    /// </summary>
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            // Create RefinedAbstraction
-            var customers = new Customers
-            {
-                // Set ConcreteImplementor
-                Data = new CustomersData("Chicago")
-            };
+using System;
 
 
-            // Exercise the bridge
-            customers.Show();
-            customers.Next();
-            customers.Show();
-            customers.Next();
-            customers.Show();
-            customers.Add("Henry Velasquez");
+public class Program {
 
-            customers.ShowAll();
+    public static void Main(string[] args) {
 
-            // Wait for user
-            Console.ReadKey();
-        }
+        var windowsLayout = new WindowsLayout();
+        var tabletLayout = new TabletLayout();
+
+        var greetingForm1 = new GreetingForm(windowsLayout);
+        var greetingForm2 = new GreetingForm(tabletLayout);
+
+        var informationForm1 = new InformationForm(windowsLayout);
+        var informationForm2 = new InformationForm(tabletLayout);
+
+        Console.WriteLine("Starting test:\n");
+
+        greetingForm1.DrawText("\nScreen 1 (Refined Abstraction 1, Implementation 1):");
+        greetingForm1.Show();
+
+        greetingForm2.DrawText("\nScreen 2 (Refined Abstraction 1, Implementation 2):");
+        greetingForm2.Show();
+
+        informationForm1.DrawText("\nScreen 3 (Refined Abstraction 2, Implementation 1):");
+        informationForm1.Show();
+
+        informationForm2.DrawText("\nScreen 4 (Refined Abstraction 2, Implementation 2):");
+        informationForm2.Show();
     }
 }

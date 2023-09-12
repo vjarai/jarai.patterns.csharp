@@ -1,5 +1,5 @@
 # Null Object
 
-The Null Object pattern allows an Method to be a empty operation.
+The Null Object pattern allows a Method of a subclass to be a empty operation.
 
-Frequency of use: medium-low
+Frequency of use: medium

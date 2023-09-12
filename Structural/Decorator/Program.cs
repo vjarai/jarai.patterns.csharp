@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Decorator.RealWorld
+namespace Jarai.Patterns.Structural.Decorator
 {
     /// <summary>
     ///     Decorator Design Pattern
@@ -9,21 +9,20 @@ namespace Decorator.RealWorld
     {
         public static void Main(string[] args)
         {
-            var book = new Book("Worley", "Inside ASP.NET", 10);
-            book.Display();
+            var book = new Book { Author = "Worley", Title = "Inside ASP.NET", NumCopies = 10 };
+            book.Show();
 
-            var video = new Video("Spielberg", "Jaws", 23, 92);
-            video.Display();
+            var video = new Video { Director = "Spielberg", Title = "Jaws", NumCopies = 23, PlayTime = 92 };
+            video.Show();
 
-            // Make video borrowable, then borrow and display
-
+            // Make video borrowable at runtime, then borrow and display
             Console.WriteLine("\nMaking video borrowable:");
 
-            var borrowvideo = new Borrowable(video);
-            borrowvideo.BorrowItem("Customer #1");
-            borrowvideo.BorrowItem("Customer #2");
+            var borrowableVideo = new BorrowableItem(video);
+            borrowableVideo.BorrowItem("Customer #1");
+            borrowableVideo.BorrowItem("Customer #2");
 
-            borrowvideo.Display();
+            borrowableVideo.Show();
 
             // Wait for user
 

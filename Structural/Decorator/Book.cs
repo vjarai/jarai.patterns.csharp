@@ -1,29 +1,17 @@
 ﻿using System;
 
-namespace Decorator.RealWorld
+namespace Jarai.Patterns.Structural.Decorator
 {
-    /// <summary>
-    ///     The 'ConcreteComponent' class
-    /// </summary>
-    public class Book : LibraryItem
+    public class Book : Item
     {
-        private readonly string _author;
-        private readonly string _title;
+        public string Author { get; set; }
+        public string Title { get; set; }
 
-        // Constructor
-
-        public Book(string author, string title, int numCopies)
-        {
-            this._author = author;
-            this._title = title;
-            NumCopies = numCopies;
-        }
-
-        public override void Display()
+        public override void Show()
         {
             Console.WriteLine("\nBook ------ ");
-            Console.WriteLine(" Author: {0}", _author);
-            Console.WriteLine(" Title: {0}", _title);
+            Console.WriteLine(" Author: {0}", Author);
+            Console.WriteLine(" Title: {0}", Title);
             Console.WriteLine(" # Copies: {0}", NumCopies);
         }
     }

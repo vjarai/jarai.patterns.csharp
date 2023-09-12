@@ -1,71 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Jarai.Patterns.Behavioral.Visitor.Clerk">
-    <Position X="0.75" Y="5.25" Width="1.5" />
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Jarai.Patterns.Behavioral.Visitor.ReinigungsVisitor">
+    <Position X="10" Y="4" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Clerk.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ReinigungsVisitor.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Jarai.Patterns.Behavioral.Visitor.Director">
-    <Position X="3.5" Y="5.25" Width="1.5" />
+  <Class Name="Jarai.Patterns.Behavioral.Visitor.Fuhrpark">
+    <Position X="0.75" Y="1.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Director.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Jarai.Patterns.Behavioral.Visitor.Element">
-    <Position X="3.75" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Element.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Jarai.Patterns.Behavioral.Visitor.Employee">
-    <Position X="3.75" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AIAAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Employee.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Jarai.Patterns.Behavioral.Visitor.Employees">
-    <Position X="0.5" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AIAAAAAAAAAAAAIAAAAAAAAAAIAAAAAAAAAAAAAgAAA=</HashCode>
-      <FileName>Employees.cs</FileName>
+      <HashCode>AAIAAAAAAABAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fuhrpark.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
-      <Field Name="_employees" />
+      <Field Name="_fahrzeuge" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="Jarai.Patterns.Behavioral.Visitor.IncomeVisitor" BaseTypeListCollapsed="true">
-    <Position X="11.75" Y="4.5" Width="1.5" />
+  <Class Name="Jarai.Patterns.Behavioral.Visitor.VersicherungsVisitor">
+    <Position X="12.25" Y="4" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IncomeVisitor.cs</FileName>
+      <FileName>VersicherungsVisitor.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="Jarai.Patterns.Behavioral.Visitor.President">
-    <Position X="5.75" Y="5.25" Width="1.5" />
+  <Class Name="Jarai.Patterns.Behavioral.Visitor.Lkw">
+    <Position X="3.75" Y="3.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>President.cs</FileName>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lkw.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Jarai.Patterns.Behavioral.Visitor.VacationVisitor" BaseTypeListCollapsed="true">
-    <Position X="9.75" Y="4.5" Width="1.5" />
+  <Class Name="Jarai.Patterns.Behavioral.Visitor.Bus">
+    <Position X="6.5" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Jarai.Patterns.Behavioral.Visitor.Visitor">
+    <Position X="11" Y="1.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>VacationVisitor.cs</FileName>
+      <FileName>Visitor.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Interface Name="Jarai.Patterns.Behavioral.Visitor.IVisitor">
-    <Position X="10.75" Y="2.5" Width="1.5" />
+  <Interface Name="Jarai.Patterns.Behavioral.Visitor.IVisitable">
+    <Position X="5.25" Y="1.75" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IVisitor.cs</FileName>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IVisitable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

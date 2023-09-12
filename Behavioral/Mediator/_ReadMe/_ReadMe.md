@@ -5,3 +5,5 @@ Mediator promotes loose coupling by keeping objects from referring to each other
 and it lets you vary their interaction independently.
 
 Frequency of use: medium-low
+
+![image](./_mediator.png)

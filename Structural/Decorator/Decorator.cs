@@ -1,22 +1,17 @@
-﻿namespace Decorator.RealWorld
+﻿namespace Jarai.Patterns.Structural.Decorator
 {
-    /// <summary>
-    ///     The 'Decorator' abstract class
-    /// </summary>
-    public abstract class Decorator : LibraryItem
+    public abstract class ItemDecorator : Item
     {
-        protected LibraryItem LibraryItem;
+        protected Item Item;
 
-        // Constructor
-
-        public Decorator(LibraryItem libraryItem)
+        public ItemDecorator(Item item)
         {
-            this.LibraryItem = libraryItem;
+            Item = item;
         }
 
-        public override void Display()
+        public override void Show()
         {
-            LibraryItem.Display();
+            Item.Show();
         }
     }
 }

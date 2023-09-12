@@ -9,21 +9,12 @@ namespace Jarai.Patterns.Behavioral.Visitor
     {
         public static void Main(string[] args)
         {
-            // Setup employee collection
+            var fuhrpark = new Fuhrpark();
+            fuhrpark.Add(new Lkw());
+            fuhrpark.Add(new Bus());
 
-            var employee = new Employees();
-            employee.Attach(new Clerk());
-            employee.Attach(new Director());
-            employee.Attach(new President());
-
-            // Employees are 'visited'
-
-            employee.Accept(new IncomeVisitor());
-            employee.Accept(new VacationVisitor());
-
-            // Wait for user
-
-            Console.ReadKey();
+            fuhrpark.AcceptVisitor(new ReinigungsVisitor());
+            fuhrpark.AcceptVisitor(new VersicherungsVisitor());
         }
     }
 }

@@ -1,33 +1,21 @@
 ﻿using System;
 
-namespace Decorator.RealWorld
+namespace Jarai.Patterns.Structural.Decorator
 {
-    /// <summary>
-    ///     The 'ConcreteComponent' class
-    /// </summary>
-    public class Video : LibraryItem
+    public class Video : Item
     {
-        private readonly string _director;
-        private readonly int _playTime;
-        private readonly string _title;
+        public string Director { get; set; }
+        public int PlayTime { get; set; }
+        public string Title { get; set; }
 
-        // Constructor
 
-        public Video(string director, string title, int numCopies, int playTime)
-        {
-            this._director = director;
-            this._title = title;
-            NumCopies = numCopies;
-            this._playTime = playTime;
-        }
-
-        public override void Display()
+        public override void Show()
         {
             Console.WriteLine("\nVideo ----- ");
-            Console.WriteLine(" Director: {0}", _director);
-            Console.WriteLine(" Title: {0}", _title);
+            Console.WriteLine(" Director: {0}", Director);
+            Console.WriteLine(" Title: {0}", Title);
             Console.WriteLine(" # Copies: {0}", NumCopies);
-            Console.WriteLine(" Playtime: {0}\n", _playTime);
+            Console.WriteLine(" Playtime: {0}\n", PlayTime);
         }
     }
 }

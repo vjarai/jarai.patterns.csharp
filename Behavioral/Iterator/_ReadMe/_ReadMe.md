@@ -4,3 +4,5 @@ The Iterator pattern provides a way to access the elements of an aggregate objec
 without exposing its underlying representation.
 
 Frequency of use: high
+
+![image](./_iterator.png)

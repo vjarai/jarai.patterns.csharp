@@ -80,6 +80,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="_ReadMe\ClassDiagram1.cd" />
+    <None Include="_ReadMe\ReadMe.md" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

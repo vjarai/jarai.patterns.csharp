@@ -57,5 +57,8 @@
     <None Include="_ReadMe\ClassDiagram1.cd" />
     <None Include="_ReadMe\_ReadMe.md" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="_ReadMe\_mediator.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

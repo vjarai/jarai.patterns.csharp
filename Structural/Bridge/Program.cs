@@ -5,8 +5,8 @@ public class Program {
 
     public static void Main(string[] args) {
 
-        var windowsLayout = new WindowsLayout();
-        var tabletLayout = new TabletLayout();
+        var windowsLayout = new DesktopLayout();
+        var tabletLayout = new MobileLayout();
 
         var greetingForm1 = new GreetingForm(windowsLayout);
         var greetingForm2 = new GreetingForm(tabletLayout);

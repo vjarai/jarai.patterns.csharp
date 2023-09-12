@@ -52,12 +52,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="TabletLayout.cs" />
+    <Compile Include="MobileLayout.cs" />
     <Compile Include="Form.cs" />
     <Compile Include="GreetingForm.cs" />
     <Compile Include="InformationForm.cs" />
     <Compile Include="Layout.cs" />
-    <Compile Include="WindowsLayout.cs" />
+    <Compile Include="DesktopLayout.cs" />
     <Content Include="_ReadMe\Description.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

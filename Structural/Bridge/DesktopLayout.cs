@@ -1,7 +1,7 @@
 
 using System;
 
-public class TabletLayout : Layout {
+public class DesktopLayout : Layout {
 
 
     public override void PrintLine() {
@@ -10,11 +10,11 @@ public class TabletLayout : Layout {
 
 
     public override void PrintDecor() {
-        Console.Write("X");
+        Console.Write("*");
     }
 
 
     public override void PrintText(string text) {
-        Console.WriteLine(text.ToUpper());
+        Console.WriteLine(text);
     }
 }

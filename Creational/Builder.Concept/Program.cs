@@ -1,51 +1,37 @@
-﻿using System;
+using System;
 
 namespace Jarai.Patterns.Creational.Builder
 {
-    // The Builder interface specifies methods for creating the different parts
-    // of the Product objects.
+    public class Program {
 
-    // The Concrete Builder classes follow the Builder interface and provide
-    // specific implementations of the building steps. Your program may have
-    // several variations of Builders, implemented differently.
 
-    // It makes sense to use the Builder pattern only when your products are
-    // quite complex and require extensive configuration.
-    //
-    // Unlike in other creational patterns, different concrete builders can
-    // produce unrelated products. In other words, results of various builders
-    // may not always follow the same interface.
+        public static void Main(string[] args) {
 
-    // The Director is only responsible for executing the building steps in a
-    // particular sequence. It is helpful when producing products according to a
-    // specific order or configuration. Strictly speaking, the Director class is
-    // optional, since the client can control builders directly.
 
-    internal class Program
-    {
-        private static void Main(string[] args)
-        {
-            // The client code creates a builder object, passes it to the
-            // director and then initiates the construction process. The end
-            // result is retrieved from the builder object.
+            // Director gets the concrete builder object from the client
+            // (application code). That's because application knows better which
+            // builder to use to get a specific product.
+            var builder = new CarBuilder();
             var director = new Director();
-            var builder = new ConcreteBuilder();
-            director.Builder = builder;
+            director.ConstructSportsCar(builder);
+            var car = builder.GetResult();
 
-            Console.WriteLine("Standard basic product:");
-            director.BuildMinimalViableProduct();
-            Console.WriteLine(builder.GetProduct().ListParts());
 
-            Console.WriteLine("Standard full featured product:");
-            director.BuildFullFeaturedProduct();
-            Console.WriteLine(builder.GetProduct().ListParts());
+            // The  product is often retrieved from a builder object, since
+            // Director is not aware and not dependent on concrete builders and
+            // products.
 
-            // Remember, the Builder pattern can be used without a Director
-            // class.
-            Console.WriteLine("Custom product:");
-            builder.BuildPartA();
-            builder.BuildPartC();
-            Console.Write(builder.GetProduct().ListParts());
+            Console.WriteLine("Car built:\n" + car.GetCarType());
+
+
+            var manualBuilder = new CarManualBuilder();
+
+            // Director may know several building recipes.
+            director.ConstructSportsCar(manualBuilder);
+            var carManual = manualBuilder.GetResult();
+            Console.WriteLine("\nCar manual built:\n" + carManual.Print());
         }
+
     }
 }
+

@@ -1,26 +1,32 @@
-﻿namespace Jarai.Patterns.Creational.Builder
+
+namespace Jarai.Patterns.Creational.Builder
 {
-    public class Director
-    {
-        private IBuilder _builder;
+    public class Director {
 
-        public IBuilder Builder
-        {
-            set { _builder = value; }
+        public void ConstructSportsCar(IBuilder builder) {
+            builder.SetCarType(CarType.SportsCar);
+            builder.SetSeats(2);
+            builder.SetEngine(new Engine(3.0, 0));
+            builder.SetTransmission(Transmission.SemiAutomatic);
+            builder.SetTripComputer(new TripComputer());
+            builder.SetGpsNavigator(new GpsNavigator());
         }
 
-        public void BuildFullFeaturedProduct()
-        {
-            _builder.BuildPartA();
-            _builder.BuildPartB();
-            _builder.BuildPartC();
+        public void ConstructCityCar(IBuilder builder) {
+            builder.SetCarType(CarType.CityCar);
+            builder.SetSeats(2);
+            builder.SetEngine(new Engine(1.2, 0));
+            builder.SetTransmission(Transmission.Automatic);
+            builder.SetTripComputer(new TripComputer());
+            builder.SetGpsNavigator(new GpsNavigator());
         }
 
-        // The Director can construct several product variations using the same
-        // building steps.
-        public void BuildMinimalViableProduct()
-        {
-            _builder.BuildPartA();
+        public void ConstructSuv(IBuilder builder) {
+            builder.SetCarType(CarType.Suv);
+            builder.SetSeats(4);
+            builder.SetEngine(new Engine(2.5, 0));
+            builder.SetTransmission(Transmission.Manual);
+            builder.SetGpsNavigator(new GpsNavigator());
         }
     }
 }

@@ -1,36 +1,90 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="RefactoringGuru.DesignPatterns.Builder.Conceptual.ConcreteBuilder" BaseTypeListCollapsed="true">
-    <Position X="4.25" Y="2.75" Width="1.5" />
+  <Class Name="Jarai.Patterns.Creational.Builder.Car">
+    <Position X="0.5" Y="1" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAABAAAAAAAAMACAAAAAAAAAIAACAAAAAA=</HashCode>
-      <FileName>ConcreteBuilder.cs</FileName>
+      <HashCode>IAAAAAAACABAAAABAACIiAAEAAAAIAAIAAAkAAAACgA=</HashCode>
+      <FileName>Car.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_carType" />
+      <Field Name="_engine" />
+      <Field Name="_gpsNavigator" />
+      <Field Name="_transmission" />
+      <Field Name="_tripComputer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Jarai.Patterns.Creational.Builder.CarBuilder" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIBAAASAAAAAiAgAAAAAIAAIQEAAgBAAAAA=</HashCode>
+      <FileName>CarBuilder.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="RefactoringGuru.DesignPatterns.Builder.Conceptual.Product">
-    <Position X="6.5" Y="3" Width="1.5" />
+  <Class Name="Jarai.Patterns.Creational.Builder.CarManualBuilder" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Product.cs</FileName>
+      <HashCode>AAAAAAAAAIBAAASAAAAAiAgAAAAAIAAIQEAAgBAAAAA=</HashCode>
+      <FileName>CarManualBuilder.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="RefactoringGuru.DesignPatterns.Builder.Conceptual.Director">
-    <Position X="0.75" Y="0.5" Width="2.25" />
+  <Class Name="Jarai.Patterns.Creational.Builder.Director">
+    <Position X="10.75" Y="3.25" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AEAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAEAAAAACAA=</HashCode>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAg=</HashCode>
       <FileName>Director.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_builder" />
-    </ShowAsAssociation>
   </Class>
-  <Interface Name="RefactoringGuru.DesignPatterns.Builder.Conceptual.IBuilder">
-    <Position X="4.25" Y="0.5" Width="1.5" />
+  <Class Name="Jarai.Patterns.Creational.Builder.Engine" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAMACAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IBuilder.cs</FileName>
+      <HashCode>AAAAAIQAAAAAAIAAAAAAAAAAEABACAAAgAAAAACAAIA=</HashCode>
+      <FileName>Engine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Creational.Builder.GpsNavigator" Collapsed="true">
+    <Position X="4" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GPSNavigator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Creational.Builder.Manual">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAiAAAAAAAIAAIAAAgAAAEAAA=</HashCode>
+      <FileName>Manual.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Creational.Builder.TripComputer" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAEAAAAQAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>TripComputer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Jarai.Patterns.Creational.Builder.IBuilder">
+    <Position X="6.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAACAAAAAAAgAAAAAAAAAQAAAgBAAAAA=</HashCode>
+      <FileName>Builder.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Enum Name="Jarai.Patterns.Creational.Builder.CarType" Collapsed="true">
+    <Position X="4" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAQ=</HashCode>
+      <FileName>CarType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Jarai.Patterns.Creational.Builder.Transmission" Collapsed="true">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAQAAAAAAAAAAAAAAIAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transmission.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

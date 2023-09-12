@@ -7,7 +7,7 @@ namespace Jarai.Patterns.Structural.Flyweigth
     /// </summary>
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             // Build a document with text
 

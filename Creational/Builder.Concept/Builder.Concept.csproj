@@ -43,11 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConcreteBuilder.cs" />
-    <Compile Include="Director.cs" />
-    <Compile Include="IBuilder.cs" />
-    <Compile Include="Product.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +50,19 @@
     <None Include="_ReadMe\ClassDiagram1.cd" />
     <None Include="_ReadMe\_ReadMe.md" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Builder.cs" />
+    <Compile Include="Car.cs" />
+    <Compile Include="CarBuilder.cs" />
+    <Compile Include="CarManualBuilder.cs" />
+    <Compile Include="CarType.cs" />
+    <Compile Include="Director.cs" />
+    <Compile Include="Engine.cs" />
+    <Compile Include="GPSNavigator.cs" />
+    <Compile Include="Manual.cs" />
+    <Compile Include="Transmission.cs" />
+    <Compile Include="TripComputer.cs" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

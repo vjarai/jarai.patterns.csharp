@@ -60,6 +60,8 @@
     <None Include="_ReadMe\ClassDiagram1.cd" />
     <None Include="_ReadMe\_ReadMe.md" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="_ReadMe\_facade.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

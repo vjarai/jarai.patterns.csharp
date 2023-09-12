@@ -10,29 +10,18 @@ namespace Jarai.Patterns.Behavioral.Memento
     {
         public static void Main(string[] args)
         {
-            var s = new SalesProspect();
-            s.Name = "Noel van Halen";
-            s.Phone = "(412) 256-0990";
-            s.Budget = 25000.0;
+            var document = new Document();
+            var undoBuffer = new UndoBuffer(document);
 
-            // Store internal state
+            document.SetText("Hallo");
+            document.Show();
+            undoBuffer.SaveDocument();
 
-            var m = new ProspectMemory();
-            m.Memento = s.SaveMemento();
+            document.SetText("Welt");
+            document.Show();
 
-            // Continue changing originator
-
-            s.Name = "Leo Welch";
-            s.Phone = "(310) 209-7111";
-            s.Budget = 1000000.0;
-
-            // Restore saved state
-
-            s.RestoreMemento(m.Memento);
-
-            // Wait for user
-
-            Console.ReadKey();
+            undoBuffer.RestoreDocument(0);
+            document.Show();
         }
     }
 }

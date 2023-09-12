@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="Jarai.Patterns.Structural.Flyweigth.Character">
-    <Position X="3.75" Y="0.75" Width="1.5" />
+    <Position X="5" Y="0.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>gAAIBAAAAAAAAAQAQAAAAQAAAAAAAAAAAIAAAAAAAAA=</HashCode>
       <FileName>Character.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Jarai.Patterns.Structural.Flyweigth.CharacterA">
-    <Position X="1.5" Y="4" Width="1.5" />
+    <Position X="2" Y="4" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CharacterA.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Jarai.Patterns.Structural.Flyweigth.CharacterB">
-    <Position X="6" Y="4" Width="1.5" />
+    <Position X="7.5" Y="4" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CharacterB.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Jarai.Patterns.Structural.Flyweigth.CharacterFactory">
-    <Position X="1" Y="0.75" Width="1.5" />
+    <Position X="1" Y="0.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CharacterFactory.cs</FileName>
@@ -32,7 +32,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Jarai.Patterns.Structural.Flyweigth.CharacterZ">
-    <Position X="3.75" Y="4" Width="1.5" />
+    <Position X="4.75" Y="4" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CharacterZ.cs</FileName>

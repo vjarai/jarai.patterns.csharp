@@ -1,21 +1,23 @@
 ﻿using System;
+using Jarai.Patterns.Structural.Proxy;
 
-namespace Jarai.Patterns.Structural.Decorator
+namespace Proxy
 {
     internal class Program
     {
-        private static void Main(string[] args)
+        static void Main()
         {
-            var originalAuto = new Auto();
+            var db = new DatabaseServer();
 
-            Auto autoProxy = new LoggingAutoProxy(originalAuto);
+            var proxy = new DatabaseAuthorizationProxy(db);
 
-            autoProxy.Fahren(100);
-            autoProxy.Fahren(222);
+            // Keine Berechtigung...
+            //var daten = proxy.GetData();
 
-            originalAuto.StreckeAusgeben();
+            proxy.Login("Admin");
+            var daten = proxy.GetData();
 
-            Console.Read();
+            Console.WriteLine(daten);
         }
     }
 }

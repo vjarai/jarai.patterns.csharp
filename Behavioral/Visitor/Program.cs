@@ -7,7 +7,7 @@ namespace Jarai.Patterns.Behavioral.Visitor
     /// </summary>
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var fuhrpark = new Fuhrpark();
             fuhrpark.Add(new Lkw());

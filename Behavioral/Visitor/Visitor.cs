@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Jarai.Patterns.Behavioral.Visitor
+﻿namespace Jarai.Patterns.Behavioral.Visitor
 {
     public abstract class Visitor
     {

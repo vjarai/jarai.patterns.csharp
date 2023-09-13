@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Jarai.Patterns.Structural.Proxy
+﻿namespace Jarai.Patterns.Structural.Proxy
 {
     public class DatabaseServer
     {

@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace Jarai.Patterns.Behavioral.Mediator
 {
-    /// <summary>
-    /// The 'ConcreteMediator' class
-    /// </summary>
 
     public class Tower
     {

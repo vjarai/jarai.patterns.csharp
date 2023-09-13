@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Jarai.Patterns.Behavioral.Memento
+﻿namespace Jarai.Patterns.Behavioral.Memento
 {
     /// <summary>
     /// Memento Design Pattern

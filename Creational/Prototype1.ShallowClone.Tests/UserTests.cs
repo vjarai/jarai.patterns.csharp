@@ -1,10 +1,4 @@
 ﻿using Xunit;
-using Jarai.Patterns.Creational.Prototype.ShallowClone;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Jarai.Patterns.Creational.Prototype.ShallowClone.Tests
 {

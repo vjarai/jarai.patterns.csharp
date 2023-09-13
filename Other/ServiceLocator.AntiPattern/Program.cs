@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ServiceLocator.AntiPattern
+﻿namespace ServiceLocator.AntiPattern
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            // Bad smell: Service via Servicelocator auflösen (nicht testbar)
+            // Richtig wäre: Benötigte Services via Constructor Injection übergeben
+            var myService = ServiceLocator.Resolve<TestService>();
         }
     }
 }

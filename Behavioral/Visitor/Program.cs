@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Jarai.Patterns.Behavioral.Visitor
+﻿namespace Jarai.Patterns.Behavioral.Visitor
 {
     /// <summary>
     ///     Visitor Design Pattern

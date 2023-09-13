@@ -9,7 +9,7 @@ namespace Jarai.Patterns.Creational.Prototype.ShallowClone
     {
         public static void Main(string[] args)
         {
-            var user = new User
+            var person1 = new Person
             {
                 FirstName = "Fritz",
                 LastName = "Fröhlich",
@@ -20,6 +20,8 @@ namespace Jarai.Patterns.Creational.Prototype.ShallowClone
                     Country = "DE"
                 }
             };
+
+            var person2 = person1.ShallowClone();
 
             // Wait for user
             Console.ReadKey();

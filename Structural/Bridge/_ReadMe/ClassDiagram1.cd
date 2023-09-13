@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Form">
+  <Class Name="Jarai.Patterns.Structural.Bridge.Form">
     <Position X="2.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAQAAAAAIA=</HashCode>
@@ -10,36 +10,36 @@
       <Field Name="_layout" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="GreetingForm">
+  <Class Name="Jarai.Patterns.Structural.Bridge.GreetingForm">
     <Position X="3.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GreetingForm.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="InformationForm">
+  <Class Name="Jarai.Patterns.Structural.Bridge.InformationForm">
     <Position X="1.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>InformationForm.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="MobileLayout" BaseTypeListCollapsed="true">
+  <Class Name="Jarai.Patterns.Structural.Bridge.MobileLayout" BaseTypeListCollapsed="true">
     <Position X="6.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAAAAAAAAAAAAAAACAAAAAAAABAAAAAAAAA=</HashCode>
       <FileName>MobileLayout.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DesktopLayout" BaseTypeListCollapsed="true">
+  <Class Name="Jarai.Patterns.Structural.Bridge.DesktopLayout" BaseTypeListCollapsed="true">
     <Position X="8.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAAAAAAAAAAAAAAACAAAAAAAABAAAAAAAAA=</HashCode>
       <FileName>DesktopLayout.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Layout">
-    <Position X="7.25" Y="0.75" Width="1.5" />
+  <Class Name="Jarai.Patterns.Structural.Bridge.Layout">
+    <Position X="7.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAAAAAAAAAAAAAAACAAAAAAAABAAAAAAAAA=</HashCode>
       <FileName>Layout.cs</FileName>

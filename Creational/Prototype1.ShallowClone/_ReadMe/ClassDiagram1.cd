@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Jarai.Patterns.Creational.Prototype.ShallowClone.Address">
-    <Position X="7" Y="1.25" Width="1.5" />
+    <Position X="7.25" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAIAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>Address.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Jarai.Patterns.Creational.Prototype.ShallowClone.User">
+  <Class Name="Jarai.Patterns.Creational.Prototype.ShallowClone.Person">
     <Position X="4.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEQAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAg=</HashCode>
-      <FileName>User.cs</FileName>
+      <FileName>Person.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Address" />

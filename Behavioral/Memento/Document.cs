@@ -11,8 +11,6 @@ namespace Jarai.Patterns.Behavioral.Memento
             return new Memento(_text);
         }
 
-        // Restores memento
-
         public void RestoreMemento(Memento memento)
         {
             _text = memento.Text;

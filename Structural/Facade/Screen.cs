@@ -4,9 +4,9 @@ namespace Jarai.Patterns.Structural.Facade
 {
     public class Screen
     {
-        readonly String _description;
+        readonly string _description;
 
-        public Screen(String description)
+        public Screen(string description)
         {
             _description = description;
         }
@@ -22,7 +22,7 @@ namespace Jarai.Patterns.Structural.Facade
         }
 
 
-        public override String ToString()
+        public override string ToString()
         {
             return _description;
         }

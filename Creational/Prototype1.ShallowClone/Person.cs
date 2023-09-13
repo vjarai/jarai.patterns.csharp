@@ -2,15 +2,15 @@
 
 namespace Jarai.Patterns.Creational.Prototype.ShallowClone
 {
-    public class User
+    public class Person
     {
-        public String FirstName { get; set; }
-        public String LastName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public Address Address { get; set; }
 
-        public User ShallowClone()
+        public Person ShallowClone()
         {
-            return new User()
+            return new Person()
             {
                 FirstName = this.FirstName,
                 LastName = this.LastName,

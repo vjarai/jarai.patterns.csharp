@@ -4,12 +4,12 @@ namespace Jarai.Patterns.Structural.Facade
 {
     public class CdPlayer
     {
-        readonly String _description;
+        readonly string _description;
         int _currentTrack;
         Amplifier _amplifier;
-        String _title;
+        string _title;
 
-        public CdPlayer(String description, Amplifier amplifier)
+        public CdPlayer(string description, Amplifier amplifier)
         {
             _description = description;
             _amplifier = amplifier;
@@ -31,7 +31,7 @@ namespace Jarai.Patterns.Structural.Facade
             Console.WriteLine(_description + " eject");
         }
 
-        public void Play(String title)
+        public void Play(string title)
         {
             _title = title;
             _currentTrack = 0;
@@ -63,7 +63,7 @@ namespace Jarai.Patterns.Structural.Facade
             Console.WriteLine(_description + " paused \"" + _title + "\"");
         }
 
-        public override String ToString()
+        public override string ToString()
         {
             return _description;
         }

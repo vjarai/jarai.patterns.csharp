@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Comment CommentText="Fabrikmethode Entwurfsmuster - Die Erstellugn der Tisch und Stuhl wir d in die Farbik.Verkaufen Methode ausgelagert. Dadurch ist unser Hauptprogramm von den konkreten Möbel Klassen unabhängig">
     <Position X="7.052" Y="0.583" Height="2.625" Width="3.252" />
   </Comment>
-  <Class Name="_04___Fabrik_Entwurfsmuster.IKEA">
-    <Position X="1.5" Y="0.5" Width="1.5" />
+  <Class Name="Jarai.Patterns.Creational.FactoryMethod.Möbel">
+    <Position X="4.75" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAEAAAAAAAAAEAAACAAAAAAAEAAAAAIAAAAA=</HashCode>
-      <FileName>IKEA.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="_04___Fabrik_Entwurfsmuster.Möbel">
-    <Position X="4.75" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAQIgAAAAAAAAAAAQgAAAAAAAAAAAEBAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAQIgAAAAgAAAAAAQAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
       <FileName>Möbel.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_04___Fabrik_Entwurfsmuster.Tisch">
-    <Position X="2.5" Y="4.25" Width="1.5" />
+  <Class Name="Jarai.Patterns.Creational.FactoryMethod.Tisch">
+    <Position X="2.75" Y="4.25" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAQAgAAAAAAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
       <FileName>Tisch.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_04___Fabrik_Entwurfsmuster.Stuhl">
-    <Position X="4.25" Y="4.25" Width="1.5" />
+  <Class Name="Jarai.Patterns.Creational.FactoryMethod.Stuhl">
+    <Position X="6.25" Y="4.25" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAQAgAAAAAAAAAAAQAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Stuhl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Creational.FactoryMethod.Ikea">
+    <Position X="0.75" Y="1.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>IKEA.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

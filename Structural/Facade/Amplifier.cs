@@ -6,12 +6,12 @@ namespace Jarai.Patterns.Structural.Facade
 {
     public class Amplifier
     {
-        readonly String _description;
+        readonly string _description;
         Tuner _tuner;
         DvdPlayer _dvd;
         CdPlayer _cd;
 
-        public Amplifier(String description)
+        public Amplifier(string description)
         {
             _description = description;
         }
@@ -59,7 +59,7 @@ namespace Jarai.Patterns.Structural.Facade
             _cd = cd;
         }
 
-        public override String ToString()
+        public override string ToString()
         {
             return _description;
         }

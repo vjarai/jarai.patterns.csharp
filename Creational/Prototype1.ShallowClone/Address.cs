@@ -4,9 +4,9 @@ namespace Jarai.Patterns.Creational.Prototype.ShallowClone
 {
     public class Address
     {
-        public String Street { get; set; }
-        public String City { get; set; }
-        public String Country { get; set; }
+        public string Street { get; set; }
+        public string City { get; set; }
+        public string Country { get; set; }
 
     }
 }

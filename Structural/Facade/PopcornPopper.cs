@@ -4,9 +4,9 @@ namespace Jarai.Patterns.Structural.Facade
 {
     public class PopcornPopper
     {
-        readonly String _description;
+        readonly string _description;
 
-        public PopcornPopper(String description)
+        public PopcornPopper(string description)
         {
             _description = description;
         }
@@ -27,7 +27,7 @@ namespace Jarai.Patterns.Structural.Facade
         }
 
 
-        public override String ToString()
+        public override string ToString()
         {
             return _description;
         }

@@ -2,13 +2,13 @@
 
 namespace Jarai.Patterns.Creational.Prototype.ShallowClone.Tests
 {
-    public class UserTests
+    public class PersonTests
     {
         [Fact()]
         public void Changing_clone_names_does_not_change_original_name()
         {
             // Arrange
-            var orignal = new User { FirstName = "Donald", LastName = "Duck", Address = new Address { Street = "Erpelweg", City = "Entenhausen", Country = "Disneyland" } };
+            var orignal = new Person { FirstName = "Donald", LastName = "Duck", Address = new Address { Street = "Erpelweg", City = "Entenhausen", Country = "Disneyland" } };
             var clone = orignal.ShallowClone();
 
             // Act
@@ -25,7 +25,7 @@ namespace Jarai.Patterns.Creational.Prototype.ShallowClone.Tests
         public void Changing_clone_adress_changes_original_adress()
         {
             // Arrange
-            var orignal = new User { FirstName = "Donald", LastName = "Duck", Address = new Address { Street = "Erpelweg", City = "Entenhausen", Country = "Disneyland" } };
+            var orignal = new Person { FirstName = "Donald", LastName = "Duck", Address = new Address { Street = "Erpelweg", City = "Entenhausen", Country = "Disneyland" } };
             var clone = orignal.ShallowClone();
 
             // Act
@@ -39,7 +39,7 @@ namespace Jarai.Patterns.Creational.Prototype.ShallowClone.Tests
         public void Cloned_adress_is_same_as_original_adress()
         {
             // Arrange
-            var orignal = new User { FirstName = "Donald", LastName = "Duck", Address = new Address { Street = "Erpelweg", City = "Entenhausen", Country = "Disneyland" } };
+            var orignal = new Person { FirstName = "Donald", LastName = "Duck", Address = new Address { Street = "Erpelweg", City = "Entenhausen", Country = "Disneyland" } };
             var clone = orignal.ShallowClone();
 
             // Act

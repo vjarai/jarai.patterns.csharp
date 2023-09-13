@@ -4,11 +4,11 @@ namespace Jarai.Patterns.Structural.Facade
 {
     public class Tuner
     {
-        readonly String _description;
+        readonly string _description;
         Amplifier _amplifier;
         double _frequency;
 
-        public Tuner(String description, Amplifier amplifier)
+        public Tuner(string description, Amplifier amplifier)
         {
             _description = description;
         }
@@ -39,7 +39,7 @@ namespace Jarai.Patterns.Structural.Facade
             Console.WriteLine(_description + " setting FM mode");
         }
 
-        public override String ToString()
+        public override string ToString()
         {
             return _description;
         }

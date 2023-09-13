@@ -13,6 +13,7 @@
 
             document.SetText("Hallo");
             document.Show();
+
             undoBuffer.SaveDocument();
 
             document.SetText("Welt");

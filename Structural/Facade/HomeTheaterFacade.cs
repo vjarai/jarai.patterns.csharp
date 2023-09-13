@@ -33,7 +33,7 @@ namespace Jarai.Patterns.Structural.Facade
             _popper = popper;
         }
 
-        public void WatchMovie(String movie)
+        public void WatchMovie(string movie)
         {
             Console.WriteLine("Get ready to watch a movie...");
             _popper.On();
@@ -64,7 +64,7 @@ namespace Jarai.Patterns.Structural.Facade
             _dvd.Off();
         }
 
-        public void ListenToCd(String cdTitle)
+        public void ListenToCd(string cdTitle)
         {
             Console.WriteLine("Get ready for an audiopile experence...");
             _lights.On();

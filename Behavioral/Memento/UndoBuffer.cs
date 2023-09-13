@@ -5,6 +5,7 @@ namespace Jarai.Patterns.Behavioral.Memento
     public class UndoBuffer
     {
         private readonly List<Memento> _mementos = new List<Memento>();
+
         private readonly Document _document;
 
         public UndoBuffer(Document document)

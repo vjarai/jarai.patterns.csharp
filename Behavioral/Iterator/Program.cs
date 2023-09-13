@@ -22,13 +22,15 @@ namespace Jarai.Patterns.Behavioral.Iterator
 
             Console.WriteLine("Straight traversal:");
 
-            foreach (var element in collection) Console.WriteLine(element);
+            foreach (var element in collection)
+                Console.WriteLine(element);
 
             Console.WriteLine("\nReverse traversal:");
 
             collection.ReverseDirection();
 
-            foreach (var element in collection) Console.WriteLine(element);
+            foreach (var element in collection) 
+                Console.WriteLine(element);
         }
     }
 }

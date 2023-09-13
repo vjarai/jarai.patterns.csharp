@@ -5,10 +5,10 @@ namespace Jarai.Patterns.Structural.Facade
 {
     public class Projector
     {
-        readonly String _description;
+        readonly string _description;
         DvdPlayer _dvdPlayer;
 
-        public Projector(String description, DvdPlayer dvdPlayer)
+        public Projector(string description, DvdPlayer dvdPlayer)
         {
             _description = description;
             _dvdPlayer = dvdPlayer;
@@ -34,7 +34,7 @@ namespace Jarai.Patterns.Structural.Facade
             Console.WriteLine(_description + " in tv mode (4x3 aspect ratio)");
         }
 
-        public override String ToString()
+        public override string ToString()
         {
             return _description;
         }

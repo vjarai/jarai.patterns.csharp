@@ -6,9 +6,9 @@ namespace Jarai.Patterns.Structural.Facade
 {
     public class TheaterLights
     {
-        readonly String _description;
+        readonly string _description;
 
-        public TheaterLights(String description)
+        public TheaterLights(string description)
         {
             _description = description;
         }
@@ -28,7 +28,7 @@ namespace Jarai.Patterns.Structural.Facade
             Console.WriteLine(_description + " dimming to " + level + "%");
         }
 
-        public override String ToString()
+        public override string ToString()
         {
             return _description;
         }

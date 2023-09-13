@@ -5,7 +5,7 @@ namespace Jarai.Patterns.Structural.Facade
 {
     public class Program
     {
-        public static void Main(String[] args)
+        public static void Main(string[] args)
         {
             var amp = new Amplifier("Top-O-Line Amplifier");
             var tuner = new Tuner("Top-O-Line AM/FM Tuner", amp);

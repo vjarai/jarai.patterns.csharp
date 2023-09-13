@@ -1,7 +1,6 @@
 ﻿using System;
-using Jarai.Patterns.Structural.Proxy;
 
-namespace Proxy
+namespace Jarai.Patterns.Structural.Proxy
 {
     internal class Program
     {

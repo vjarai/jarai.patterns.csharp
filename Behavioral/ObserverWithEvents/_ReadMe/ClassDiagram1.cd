@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="_07___Beobachter_Entwurfsmuster_mit_Events.Datenquelle">
-    <Position X="1.5" Y="0.5" Width="1.5" />
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Jarai.Patterns.Behavioral.ObserverWithEvents.Datenquelle">
+    <Position X="1.5" Y="0.5" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAACAAAQ=</HashCode>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAEAAEAAAAAAAAAAAAACAAAQ=</HashCode>
       <FileName>Datenquelle.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_07___Beobachter_Entwurfsmuster_mit_Events.DatenquelleEventArg">
-    <Position X="4.25" Y="0.5" Width="1.5" />
+  <Class Name="Jarai.Patterns.Behavioral.ObserverWithEvents.DatenquelleEventArg">
+    <Position X="7.25" Y="0.75" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>DatenquelleEventArg.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_07___Beobachter_Entwurfsmuster_mit_Events.Beobachter">
-    <Position X="4.25" Y="2.75" Width="1.5" />
+  <Class Name="Jarai.Patterns.Behavioral.ObserverWithEvents.Beobachter">
+    <Position X="5.5" Y="4.25" Width="4" />
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAIAAAAAAAAAQAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Beobachter.cs</FileName>
     </TypeIdentifier>
   </Class>

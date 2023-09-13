@@ -21,7 +21,6 @@ namespace Jarai.Patterns.Behavioral.ObserverWithEvents
                 if (_wert != value)
                 {
                     _wert = value;
-
                     OnWertChanged();
                 }
             }

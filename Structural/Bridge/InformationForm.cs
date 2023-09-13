@@ -1,20 +1,22 @@
 using System;
 
-
-public class InformationForm : Form
+namespace Jarai.Patterns.Structural.Bridge
 {
-
-
-    public InformationForm(Layout layout) :
-        base(layout)
+    public class InformationForm : Form
     {
 
-    }
+
+        public InformationForm(Layout layout) :
+            base(layout)
+        {
+
+        }
 
 
-    public void Show()
-    {
-        DateTime dateTime = new DateTime();
-        DrawTextBox("Current system time: " + dateTime);
+        public void Show()
+        {
+            DateTime dateTime = new DateTime();
+            DrawTextBox("Current system time: " + dateTime);
+        }
     }
 }

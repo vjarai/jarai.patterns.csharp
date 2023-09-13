@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Jarai.Patterns.Structural.Proxy;
 
-namespace Proxy
+namespace Jarai.Patterns.Structural.Proxy
 {
     public class DatabaseAuthorizationProxy : DatabaseServer
     {

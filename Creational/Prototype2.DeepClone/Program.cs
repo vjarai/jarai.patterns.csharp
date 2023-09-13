@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            var user = new User
+            var user = new Person
             {
                 FirstName = "Fritz",
                 LastName = "Fröhlich",

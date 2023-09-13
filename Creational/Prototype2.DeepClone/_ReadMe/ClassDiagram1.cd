@@ -7,11 +7,11 @@
       <FileName>Address.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Jarai.Patterns.Creational.Prototype.DeepClone.User">
+  <Class Name="Jarai.Patterns.Creational.Prototype.DeepClone.Person">
     <Position X="1.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAIAAAAACAAAAAAAAAAg=</HashCode>
-      <FileName>User.cs</FileName>
+      <FileName>Person.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Address" />

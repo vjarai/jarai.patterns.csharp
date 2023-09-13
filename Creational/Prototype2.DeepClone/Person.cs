@@ -2,17 +2,15 @@
 
 namespace Jarai.Patterns.Creational.Prototype.DeepClone
 {
-    public class User
+    public class Person
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public Address Address { get; set; }
 
-       
-
-        public User DeepClone()
+        public Person DeepClone()
         {
-            return new User()
+            return new Person()
             {
                 FirstName = this.FirstName,
                 LastName = this.LastName,

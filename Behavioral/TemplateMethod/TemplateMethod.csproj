@@ -43,9 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Categories.cs" />
-    <Compile Include="DataAccessor.cs" />
-    <Compile Include="Products.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="ZahlenratenGame.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -8,7 +8,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="NullObject.NullLogger">
-    <Position X="5" Y="5" Width="1.5" />
+    <Position X="4.75" Y="5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>NullLogger.cs</FileName>

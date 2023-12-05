@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="Jarai.Patterns.Creational.Builder.Car">
     <Position X="0.5" Y="1" Width="1.75" />
     <TypeIdentifier>
@@ -9,13 +9,13 @@
     <ShowAsAssociation>
       <Field Name="_carType" />
       <Field Name="_engine" />
-      <Field Name="_gpsNavigator" />
       <Field Name="_transmission" />
       <Field Name="_tripComputer" />
+      <Field Name="_gpsNavigator" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Jarai.Patterns.Creational.Builder.CarBuilder" BaseTypeListCollapsed="true">
-    <Position X="5.75" Y="4.75" Width="1.5" />
+    <Position X="5.25" Y="5" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIBAAASAAAAAiAgAAAAAIAAIQEAAgBAAAAA=</HashCode>
       <FileName>CarBuilder.cs</FileName>
@@ -23,7 +23,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="Jarai.Patterns.Creational.Builder.CarManualBuilder" BaseTypeListCollapsed="true">
-    <Position X="7.75" Y="4.75" Width="1.5" />
+    <Position X="8.5" Y="5" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIBAAASAAAAAiAgAAAAAIAAIQEAAgBAAAAA=</HashCode>
       <FileName>CarManualBuilder.cs</FileName>
@@ -31,7 +31,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="Jarai.Patterns.Creational.Builder.Director">
-    <Position X="10.75" Y="3.25" Width="2.5" />
+    <Position X="6.5" Y="0.5" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAg=</HashCode>
       <FileName>Director.cs</FileName>
@@ -66,7 +66,7 @@
     </TypeIdentifier>
   </Class>
   <Interface Name="Jarai.Patterns.Creational.Builder.IBuilder">
-    <Position X="6.5" Y="2" Width="1.5" />
+    <Position X="7" Y="2.25" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAACAAAAAAAgAAAAAAAAAQAAAgBAAAAA=</HashCode>
       <FileName>Builder.cs</FileName>

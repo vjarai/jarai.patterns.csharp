@@ -9,16 +9,16 @@ namespace Jarai.Patterns.Structural.Decorator
     {
         public static void Main(string[] args)
         {
-            var book = new Book { Author = "Worley", Title = "Inside ASP.NET", NumCopies = 10 };
+            var book = new Book { Author = "Worley", Title = "Inside ASP.NET" };
             book.Show();
 
-            var video = new Video { Director = "Spielberg", Title = "Jaws", NumCopies = 23, PlayTime = 92 };
+            var video = new Video { Director = "Spielberg", Title = "Jaws",  PlayTime = 92 };
             video.Show();
 
             // Make video borrowable at runtime, then borrow and display
             Console.WriteLine("\nMaking video borrowable:");
 
-            var borrowableVideo = new BorrowableItem(video);
+            var borrowableVideo = new BorrowableItemDecorator(video);
             borrowableVideo.BorrowItem("Customer #1");
             borrowableVideo.BorrowItem("Customer #2");
 

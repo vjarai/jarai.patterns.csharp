@@ -3,32 +3,33 @@ using System.Collections.Generic;
 
 namespace Jarai.Patterns.Structural.Decorator
 {
-    public class BorrowableItem : ItemDecorator
+    /// <summary>
+    /// Verleiht einem item die Fähigkeit ausgeliehen zu werden.
+    /// </summary>
+    public class  BorrowableItemDecorator : Item
     {
+        private readonly Item _item;
         private readonly List<string> _borrowers = new List<string>();
 
-        // Constructor
 
-        public BorrowableItem(Item item)
-            : base(item)
+        public BorrowableItemDecorator(Item item)
         {
+            _item = item;
         }
 
         public void BorrowItem(string name)
         {
             _borrowers.Add(name);
-            Item.NumCopies--;
         }
 
         public void ReturnItem(string name)
         {
             _borrowers.Remove(name);
-            Item.NumCopies++;
         }
 
         public override void Show()
         {
-            base.Show();
+            _item.Show();
 
             foreach (var borrower in _borrowers)
                 Console.WriteLine(" borrower: " + borrower);

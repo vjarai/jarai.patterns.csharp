@@ -12,7 +12,6 @@ namespace Jarai.Patterns.Structural.Decorator
             Console.WriteLine("\nBook ------ ");
             Console.WriteLine(" Author: {0}", Author);
             Console.WriteLine(" Title: {0}", Title);
-            Console.WriteLine(" # Copies: {0}", NumCopies);
         }
     }
 }

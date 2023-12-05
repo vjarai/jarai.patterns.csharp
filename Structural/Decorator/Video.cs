@@ -14,7 +14,6 @@ namespace Jarai.Patterns.Structural.Decorator
             Console.WriteLine("\nVideo ----- ");
             Console.WriteLine(" Director: {0}", Director);
             Console.WriteLine(" Title: {0}", Title);
-            Console.WriteLine(" # Copies: {0}", NumCopies);
             Console.WriteLine(" Playtime: {0}\n", PlayTime);
         }
     }

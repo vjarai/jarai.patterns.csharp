@@ -70,11 +70,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Boerse.cs" />
-    <Compile Include="Firma.cs" />
-    <Compile Include="IBeobachtbar.cs" />
-    <Compile Include="IBeobachter.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="Aktie.cs" />
+    <Compile Include="AktienkursChangedEventargs.cs" />
+    <Compile Include="Beobachter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

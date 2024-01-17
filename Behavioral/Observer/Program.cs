@@ -4,21 +4,21 @@ namespace Jarai.Patterns.Behavioral.Observer
 {
     internal class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
-            var boerse = new Boerse();
+            var boerse = new Aktie();
 
-            var p1 = new Person();
+            var beobachter1 = new Beobachter();
 
-            var f1 = new Firma();
+            var beobachter2 = new Beobachter();
 
-            boerse.AddBeobachter(p1);
-            boerse.AddBeobachter(f1);
+            boerse.AddBeobachter(beobachter1);
+            boerse.AddBeobachter(beobachter2);
 
             boerse.Kurs = 5000;
             boerse.Kurs = 6000;
 
-            boerse.RemoveBeobachter(f1);
+            boerse.RemoveBeobachter(beobachter2);
 
             boerse.Kurs = 4000;
 

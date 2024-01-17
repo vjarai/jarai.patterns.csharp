@@ -13,7 +13,6 @@ namespace MVVM
 
         public string State { get; set; }
         public string Zip { get; set; }
-        public Adress() { }
 
         public Adress(string street, string city, string state, string zip)
         {

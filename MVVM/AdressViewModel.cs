@@ -12,12 +12,12 @@ namespace MVVM
     {
         public AdressViewModel()
         {
-            Model = new Adress();
+            Model = new Adress("Testweg1", "Entenhausen", "Hessen", "4711");
         }
 
         public Adress Model { get; set; }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         [Required]
         public string Street

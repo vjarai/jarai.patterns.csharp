@@ -2,7 +2,7 @@
 
 namespace Jarai.Patterns.Behavioral.Observer
 {
-    public class Boerse : IBeobachtbar
+    public class Aktie 
     {
         private int _kurs;
 
@@ -19,24 +19,24 @@ namespace Jarai.Patterns.Behavioral.Observer
 
         private void UpdateBeobachter()
         {
+            var message = new AktienkursChangedEventargs { Aktie = this, NeuerKurs = _kurs };
+
             foreach (var b in _beobachter)
-                b.Update(this, _kurs);
+                b.Update(this, message);
         }
 
-        #region IBeobachtbar Member
 
-        private readonly List<IBeobachter> _beobachter = new List<IBeobachter>();
+        private readonly List<Beobachter> _beobachter = new List<Beobachter>();
 
-        public void AddBeobachter(IBeobachter beobachter)
+        public void AddBeobachter(Beobachter beobachter)
         {
             _beobachter.Add(beobachter);
         }
 
-        public void RemoveBeobachter(IBeobachter beobachter)
+        public void RemoveBeobachter(Beobachter beobachter)
         {
             _beobachter.Remove(beobachter);
         }
 
-        #endregion
     }
 }

@@ -1,41 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Bridge.Structural.ConcreteImplementorA">
-    <Position X="5.75" Y="3" Width="1.5" />
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Jarai.Patterns.Structural.Adapter.ApplePhone">
+    <Position X="5.5" Y="0.5" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>ConcreteImplementorA.cs</FileName>
+      <FileName>ApplePhone.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Bridge.Structural.ConcreteImplementorB">
-    <Position X="7.75" Y="3" Width="1.5" />
+  <Class Name="Jarai.Patterns.Structural.Adapter.LightningLadegerät">
+    <Position X="1.25" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>ConcreteImplementorB.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LightningLadegerät.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Bridge.Structural.Implementor">
-    <Position X="6.5" Y="0.75" Width="1.5" />
+  <Class Name="Jarai.Patterns.Structural.Adapter.UsbLadegerät">
+    <Position X="5.75" Y="3" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>Implementor.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UsbLadegerät.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Bridge.Structural.RefinedAbstraction">
-    <Position X="2.25" Y="3" Width="1.5" />
+  <Class Name="Jarai.Patterns.Structural.Adapter.UsbToLightningAdapter">
+    <Position X="0.75" Y="3" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>RefinedAbstraction.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Bridge.Structural.Abstraction">
-    <Position X="2.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAEACAAAAAA=</HashCode>
-      <FileName>Abstraction.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>UsbToLightningAdapter.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="_implementor" />
+      <Field Name="_usbLadegerät" />
     </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />

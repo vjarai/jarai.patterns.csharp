@@ -6,15 +6,15 @@ namespace Jarai.Patterns.Structural.Adapter
     {
         private static void Main(string[] args)
         {
-            var b1 = new Brief("Sehr geehrter Herr XY, ...");
+            var b1 = new ApplePhone();
 
-            var d1 = new Drucker();
-            b1.Ausdrucken(d1);
+            var d1 = new LightningLadegerät();
+            b1.Aufladen(d1);
 
 
-            var p1 = new Plotter();
-            var pa = new PlotterAdapter(p1);
-            b1.Ausdrucken(pa);
+            var p1 = new UsbLadegerät();
+            var pa = new UsbToLightningAdapter(p1);
+            b1.Aufladen(pa);
 
             Console.Read();
         }

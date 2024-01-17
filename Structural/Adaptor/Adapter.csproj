@@ -70,16 +70,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Brief.cs" />
-    <Compile Include="Drucker.cs" />
-    <Compile Include="Plotter.cs" />
-    <Compile Include="PlotterAdapter.cs" />
+    <Compile Include="ApplePhone.cs" />
+    <Compile Include="LightningLadegerät.cs" />
+    <Compile Include="UsbLadegerät.cs" />
+    <Compile Include="UsbToLightningAdapter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="ClassDiagram1.cd" />
     <None Include="_ReadMe\ClassDiagram1.cd" />
     <None Include="_ReadMe\_ReadMe.md" />
   </ItemGroup>

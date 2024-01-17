@@ -87,7 +87,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibilty", "Beh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverWithEvents", "Behavioral\ObserverWithEvents\ObserverWithEvents.csproj", "{75D5DD25-23E6-45B1-9B1E-850D66038FDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullObject", "NullObject\NullObject.csproj", "{310B449A-B041-4F5B-AFEC-D5CC6E90A3EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullObject", "NullObject\NullObject.csproj", "{310B449A-B041-4F5B-AFEC-D5CC6E90A3EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM", "MVVM\MVVM.csproj", "{66C279F5-0F57-417D-B2AE-C394D25E44CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -247,6 +249,10 @@ Global
 		{310B449A-B041-4F5B-AFEC-D5CC6E90A3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{310B449A-B041-4F5B-AFEC-D5CC6E90A3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{310B449A-B041-4F5B-AFEC-D5CC6E90A3EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66C279F5-0F57-417D-B2AE-C394D25E44CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66C279F5-0F57-417D-B2AE-C394D25E44CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66C279F5-0F57-417D-B2AE-C394D25E44CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66C279F5-0F57-417D-B2AE-C394D25E44CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -290,6 +296,7 @@ Global
 		{AE67141D-3E03-4B15-8AAA-79064163C4FB} = {F4AFB136-9B2D-4375-AA19-C7DE22CEF927}
 		{75D5DD25-23E6-45B1-9B1E-850D66038FDF} = {F4AFB136-9B2D-4375-AA19-C7DE22CEF927}
 		{310B449A-B041-4F5B-AFEC-D5CC6E90A3EA} = {380780F9-E50B-45EC-82A1-A066459BBFAC}
+		{66C279F5-0F57-417D-B2AE-C394D25E44CA} = {380780F9-E50B-45EC-82A1-A066459BBFAC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4932A8B6-D7D9-4C61-AB81-2F4B361E7C4D}

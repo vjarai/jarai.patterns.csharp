@@ -6,7 +6,7 @@ namespace Jarai.Patterns.Structural.Proxy
     {
         static void Main()
         {
-            var db = new DatabaseServer();
+            var db = new Database();
 
             var proxy = new DatabaseAuthorizationProxy(db);
 

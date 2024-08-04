@@ -1,6 +1,6 @@
 ﻿namespace Jarai.Patterns.Structural.Proxy
 {
-    public class DatabaseServer
+    public class Database
     {
         public virtual string GetData()
         {

@@ -31,19 +31,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethod", "Behaviora
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visitor", "Behavioral\Visitor\Visitor.csproj", "{5E9386BD-E2A7-44BF-BAAA-FEF7DAA9ACA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Structural\Adaptor\Adapter.csproj", "{DD0BCF94-246C-4B41-909C-93D3A34C858A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Structural\Adaptor\Adapter.csproj", "{DD0BCF94-246C-4B41-909C-93D3A34C858A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge", "Structural\Bridge\Bridge.csproj", "{D98CAE2B-C74F-43EC-8BEA-64C244A7BABE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Structural\Composite\Composite.csproj", "{AA963CEC-F1ED-4A94-9702-7E5ACE46419D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "Structural\Composite\Composite.csproj", "{AA963CEC-F1ED-4A94-9702-7E5ACE46419D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Structural\Decorator\Decorator.csproj", "{E3EC747C-216B-4043-ACE7-48139F817112}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Structural\Decorator\Decorator.csproj", "{E3EC747C-216B-4043-ACE7-48139F817112}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Structural\Facade\Facade.csproj", "{C8D8EC5B-E5F6-484C-984E-5D2E4467264E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Structural\Facade\Facade.csproj", "{C8D8EC5B-E5F6-484C-984E-5D2E4467264E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flyweigth", "Structural\Flyweigth\Flyweigth.csproj", "{1FCD3959-242C-40C4-8E92-13E5CE92D6E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flyweigth", "Structural\Flyweigth\Flyweigth.csproj", "{1FCD3959-242C-40C4-8E92-13E5CE92D6E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Structural\Proxy\Proxy.csproj", "{01503A0F-FA51-4C83-A260-7E61D6B23101}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proxy", "Structural\Proxy\Proxy.csproj", "{01503A0F-FA51-4C83-A260-7E61D6B23101}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Relations", "_Refresher\Relations.csproj", "{AFC757B5-2488-43D9-BDE2-0FCDD2FFBE9D}"
 EndProject
@@ -69,15 +69,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype3.DeepCloneViaSeri
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Creational\Singleton\Singleton.csproj", "{17546D5E-73E7-4986-95BA-5D9BE351259A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "Other\DependencyInjection\DependencyInjection.csproj", "{C869CC64-6009-4A8E-9831-C5D4D132E514}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyInjection", "Other\DependencyInjection\DependencyInjection.csproj", "{C869CC64-6009-4A8E-9831-C5D4D132E514}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORMapper", "Other\ORMapper\ORMapper.csproj", "{00875F02-DAD6-4298-92F1-85D40536988A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLocator.AntiPattern", "Other\ServiceLocator.AntiPattern\ServiceLocator.AntiPattern.csproj", "{975CE53C-335D-42CC-943C-10A316BCD21D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceLocator.AntiPattern", "Other\ServiceLocator.AntiPattern\ServiceLocator.AntiPattern.csproj", "{975CE53C-335D-42CC-943C-10A316BCD21D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interpreter", "Behavioral\Interpreter\Interpreter.csproj", "{726CC393-2826-4EEC-B1AC-D9CD95B484B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyLoad", "Other\LazyLoad\LazyLoad.csproj", "{7276709A-1287-43D6-94A8-7BA129886109}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LazyLoad", "Other\LazyLoad\LazyLoad.csproj", "{7276709A-1287-43D6-94A8-7BA129886109}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Creational\Builder.Concept\Builder.csproj", "{DF167513-23DF-4A07-BC9A-763C6D9C22E2}"
 EndProject

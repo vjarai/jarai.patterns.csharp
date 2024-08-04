@@ -6,21 +6,21 @@
   <Comment CommentText="Proxy IST EIN Datenbankserver (aus Gründen der Austauschbarkeit)">
     <Position X="6.781" Y="3.464" Height="0.406" Width="4.085" />
   </Comment>
-  <Class Name="Jarai.Patterns.Structural.Proxy.DatabaseServer">
+  <Class Name="Jarai.Patterns.Structural.Proxy.Database">
     <Position X="8.75" Y="2" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DatabaseServer.cs</FileName>
+      <FileName>Database.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Jarai.Patterns.Structural.Proxy.DatabaseAuthorizationProxy">
     <Position X="2.5" Y="1.5" Width="4" />
     <TypeIdentifier>
-      <HashCode>AACAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAEAAAAA=</HashCode>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAQAAAAQAEAAAAA=</HashCode>
       <FileName>DatabaseAuthorizationProxy.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="_databaseServer" />
+      <Field Name="_database" />
     </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />

@@ -2,14 +2,14 @@
 
 namespace Jarai.Patterns.Structural.Proxy
 {
-    public class DatabaseAuthorizationProxy : DatabaseServer
+    public class DatabaseAuthorizationProxy : Database
     {
-        private readonly DatabaseServer _databaseServer;
+        private readonly Database _database;
         private bool _isAuthorized = false;
 
-        public DatabaseAuthorizationProxy(DatabaseServer databaseServer)
+        public DatabaseAuthorizationProxy(Database database)
         {
-            _databaseServer = databaseServer;
+            _database = database;
         }
 
 
@@ -18,7 +18,7 @@ namespace Jarai.Patterns.Structural.Proxy
             if (!_isAuthorized)
                 throw new InvalidOperationException("Keine Berechtigung");
 
-            return _databaseServer.GetData();
+            return _database.GetData();
         }
 
         public void Login(string benutzer)

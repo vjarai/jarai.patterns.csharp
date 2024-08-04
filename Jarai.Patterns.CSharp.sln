@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32811.315
@@ -33,7 +33,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Behavioral\Visit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Structural\Adaptor\Adapter.csproj", "{DD0BCF94-246C-4B41-909C-93D3A34C858A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Structural\Bridge\Bridge.csproj", "{D98CAE2B-C74F-43EC-8BEA-64C244A7BABE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge", "Structural\Bridge\Bridge.csproj", "{D98CAE2B-C74F-43EC-8BEA-64C244A7BABE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Structural\Composite\Composite.csproj", "{AA963CEC-F1ED-4A94-9702-7E5ACE46419D}"
 EndProject
@@ -89,7 +89,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverWithEvents", "Behav
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullObject", "NullObject\NullObject.csproj", "{310B449A-B041-4F5B-AFEC-D5CC6E90A3EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM", "MVVM\MVVM.csproj", "{66C279F5-0F57-417D-B2AE-C394D25E44CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVM", "MVVM\MVVM.csproj", "{66C279F5-0F57-417D-B2AE-C394D25E44CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge2", "Structural\Bridge2\Bridge2.csproj", "{C74F88FC-96C1-44BA-B01F-76B9118924E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -253,6 +255,10 @@ Global
 		{66C279F5-0F57-417D-B2AE-C394D25E44CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66C279F5-0F57-417D-B2AE-C394D25E44CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66C279F5-0F57-417D-B2AE-C394D25E44CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C74F88FC-96C1-44BA-B01F-76B9118924E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C74F88FC-96C1-44BA-B01F-76B9118924E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C74F88FC-96C1-44BA-B01F-76B9118924E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C74F88FC-96C1-44BA-B01F-76B9118924E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -297,6 +303,7 @@ Global
 		{75D5DD25-23E6-45B1-9B1E-850D66038FDF} = {F4AFB136-9B2D-4375-AA19-C7DE22CEF927}
 		{310B449A-B041-4F5B-AFEC-D5CC6E90A3EA} = {380780F9-E50B-45EC-82A1-A066459BBFAC}
 		{66C279F5-0F57-417D-B2AE-C394D25E44CA} = {380780F9-E50B-45EC-82A1-A066459BBFAC}
+		{C74F88FC-96C1-44BA-B01F-76B9118924E1} = {F53B4757-3F01-4837-BD1E-F89B8A16FE15}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4932A8B6-D7D9-4C61-AB81-2F4B361E7C4D}

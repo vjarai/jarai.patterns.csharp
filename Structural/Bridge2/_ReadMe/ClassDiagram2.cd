@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bridge2.Fahrzeug">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fahrzeug.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Antrieb" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bridge2.Antrieb">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Antrieb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bridge2.AllradAntrieb" Collapsed="true">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AllradAntrieb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bridge2.ZweiradAntrieb" Collapsed="true">
+    <Position X="9.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ZweiradAntrieb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bridge2.ElektroFahrzeug" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElektroFahrzeug.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bridge2.VerbrennerFahrzeug" Collapsed="true">
+    <Position X="4.75" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VerbrennerFahrzeug.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

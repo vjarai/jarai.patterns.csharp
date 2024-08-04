@@ -15,21 +15,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "Creation
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "Creational\Factory\FactoryMethod.csproj", "{E71C6006-7C16-4431-A902-0FAD94F001F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command", "Behavioral\Command\Command.csproj", "{4E0B6A2E-A7B3-4D83-AC4F-D1BBCC785EEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Command", "Behavioral\Command\Command.csproj", "{4E0B6A2E-A7B3-4D83-AC4F-D1BBCC785EEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Behavioral\Iterator\Iterator.csproj", "{0DD91F68-5F18-482C-BCB9-73F189607E9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iterator", "Behavioral\Iterator\Iterator.csproj", "{0DD91F68-5F18-482C-BCB9-73F189607E9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator", "Behavioral\Mediator\Mediator.csproj", "{DEA4F50E-979D-47B7-91FF-FBB2F34ED4FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mediator", "Behavioral\Mediator\Mediator.csproj", "{DEA4F50E-979D-47B7-91FF-FBB2F34ED4FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento", "Behavioral\Memento\Memento.csproj", "{DA49D118-6CBA-4891-8B16-EA26A437B778}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Memento", "Behavioral\Memento\Memento.csproj", "{DA49D118-6CBA-4891-8B16-EA26A437B778}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Behavioral\Observer\Observer.csproj", "{5BF97645-628A-4534-9FE8-024882B9DDA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Observer", "Behavioral\Observer\Observer.csproj", "{5BF97645-628A-4534-9FE8-024882B9DDA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Behavioral\Strategy\Strategy.csproj", "{00018274-87AE-4A78-B452-E4FEDFDAAA10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "Behavioral\Strategy\Strategy.csproj", "{00018274-87AE-4A78-B452-E4FEDFDAAA10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "Behavioral\TemplateMethod\TemplateMethod.csproj", "{93E132CA-CCB3-4EF2-B941-EEAEBD1E4D49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethod", "Behavioral\TemplateMethod\TemplateMethod.csproj", "{93E132CA-CCB3-4EF2-B941-EEAEBD1E4D49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Behavioral\Visitor\Visitor.csproj", "{5E9386BD-E2A7-44BF-BAAA-FEF7DAA9ACA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visitor", "Behavioral\Visitor\Visitor.csproj", "{5E9386BD-E2A7-44BF-BAAA-FEF7DAA9ACA9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Structural\Adaptor\Adapter.csproj", "{DD0BCF94-246C-4B41-909C-93D3A34C858A}"
 EndProject
@@ -45,15 +45,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flyweigth", "Structural\Fly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Structural\Proxy\Proxy.csproj", "{01503A0F-FA51-4C83-A260-7E61D6B23101}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relations", "_Refresher\Relations.csproj", "{AFC757B5-2488-43D9-BDE2-0FCDD2FFBE9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Relations", "_Refresher\Relations.csproj", "{AFC757B5-2488-43D9-BDE2-0FCDD2FFBE9D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 Other", "4 Other", "{380780F9-E50B-45EC-82A1-A066459BBFAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State1.Prozedural.Tests", "Behavioral\State\State.Original.Tests\State1.Prozedural.Tests.csproj", "{2E0C825B-6582-4524-A0C8-A65B31826F4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State1.Prozedural.Tests", "Behavioral\State\State.Original.Tests\State1.Prozedural.Tests.csproj", "{2E0C825B-6582-4524-A0C8-A65B31826F4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State2.Pattern", "Behavioral\State\State.Refactored\State2.Pattern.csproj", "{8E873551-1912-443F-89CD-05304156DBA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State2.Pattern", "Behavioral\State\State.Refactored\State2.Pattern.csproj", "{8E873551-1912-443F-89CD-05304156DBA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State2.Pattern.Tests", "Behavioral\State\State.Refactored.Tests\State2.Pattern.Tests.csproj", "{C9CEBEC9-0F82-49DF-901A-F4997BBC9931}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State2.Pattern.Tests", "Behavioral\State\State.Refactored.Tests\State2.Pattern.Tests.csproj", "{C9CEBEC9-0F82-49DF-901A-F4997BBC9931}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype1.ShallowClone.Tests", "Creational\Prototype1.ShallowClone.Tests\Prototype1.ShallowClone.Tests.csproj", "{76CD860F-5A6D-4CC4-A119-880E93E84861}"
 EndProject
@@ -75,17 +75,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORMapper", "Other\ORMapper\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLocator.AntiPattern", "Other\ServiceLocator.AntiPattern\ServiceLocator.AntiPattern.csproj", "{975CE53C-335D-42CC-943C-10A316BCD21D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interpreter", "Behavioral\Interpreter\Interpreter.csproj", "{726CC393-2826-4EEC-B1AC-D9CD95B484B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interpreter", "Behavioral\Interpreter\Interpreter.csproj", "{726CC393-2826-4EEC-B1AC-D9CD95B484B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyLoad", "Other\LazyLoad\LazyLoad.csproj", "{7276709A-1287-43D6-94A8-7BA129886109}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Creational\Builder.Concept\Builder.csproj", "{DF167513-23DF-4A07-BC9A-763C6D9C22E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State1.Prozedural", "Behavioral\State\State.Original\State1.Prozedural.csproj", "{311515D7-738A-4A8B-8EDF-A20918101FD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State1.Prozedural", "Behavioral\State\State.Original\State1.Prozedural.csproj", "{311515D7-738A-4A8B-8EDF-A20918101FD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibilty", "Behavioral\ChainOfResponsibility\ChainOfResponsibilty.csproj", "{AE67141D-3E03-4B15-8AAA-79064163C4FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibilty", "Behavioral\ChainOfResponsibility\ChainOfResponsibilty.csproj", "{AE67141D-3E03-4B15-8AAA-79064163C4FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverWithEvents", "Behavioral\ObserverWithEvents\ObserverWithEvents.csproj", "{75D5DD25-23E6-45B1-9B1E-850D66038FDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverWithEvents", "Behavioral\ObserverWithEvents\ObserverWithEvents.csproj", "{75D5DD25-23E6-45B1-9B1E-850D66038FDF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullObject", "NullObject\NullObject.csproj", "{310B449A-B041-4F5B-AFEC-D5CC6E90A3EA}"
 EndProject

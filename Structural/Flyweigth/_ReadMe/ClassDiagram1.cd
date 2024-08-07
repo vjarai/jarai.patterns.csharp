@@ -1,42 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Jarai.Patterns.Structural.Flyweigth.Character">
-    <Position X="5" Y="0.75" Width="2.25" />
+  <Class Name="Jarai.Patterns.Structural.Flyweigth.Format">
+    <Position X="10.25" Y="1.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>gAAIBAAAAAAAAAQAQAAAAQAAAAAAAAAAAIAAAAAAAAA=</HashCode>
-      <FileName>Character.cs</FileName>
+      <HashCode>AgAACAAAAAAAAAAEAAAAAgAIAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Format.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Jarai.Patterns.Structural.Flyweigth.CharacterA">
-    <Position X="2" Y="4" Width="2.25" />
+  <Class Name="Jarai.Patterns.Structural.Flyweigth.TextDocument">
+    <Position X="0.75" Y="1.5" Width="3" />
+    <AssociationLine Name="_formatCache" Type="Jarai.Patterns.Structural.Flyweigth.FormatCache" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.125" Y="2.796" />
+        <Point X="2.125" Y="4.344" />
+        <Point X="5.75" Y="4.344" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CharacterA.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAEAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>TextDocument.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="Jarai.Patterns.Structural.Flyweigth.CharacterB">
-    <Position X="7.5" Y="4" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CharacterB.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Jarai.Patterns.Structural.Flyweigth.CharacterFactory">
-    <Position X="1" Y="0.75" Width="2.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CharacterFactory.cs</FileName>
-    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_formatCache" />
+    </ShowAsAssociation>
     <ShowAsCollectionAssociation>
-      <Field Name="characters" />
+      <Field Name="_text" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="Jarai.Patterns.Structural.Flyweigth.CharacterZ">
-    <Position X="4.75" Y="4" Width="2.25" />
+  <Class Name="Jarai.Patterns.Structural.Flyweigth.FormatCache">
+    <Position X="5.75" Y="3.75" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CharacterZ.cs</FileName>
+      <HashCode>AAAAAAACAIAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormatCache.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_cache" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Jarai.Patterns.Structural.Flyweigth.FormattedText">
+    <Position X="1.25" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAACAAAAAAAAAAEAAAAAgAIAAAgAAAAAAAACAAAAAA=</HashCode>
+      <FileName>FormattedText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Patterns.Structural.Flyweigth.FlyweightText">
+    <Position X="5.75" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAgAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>FlyweightText.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Format" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

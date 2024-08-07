@@ -9,29 +9,22 @@ namespace Jarai.Patterns.Structural.Flyweigth
     {
         public static void Main()
         {
-            // Build a document with text
+            var textDocument = new TextDocument();
 
-            var document = "AAZZBBZB";
-            var chars = document.ToCharArray();
+            textDocument.AddText("Hello1");
+            textDocument.AddText("Hello1");
 
-            var factory = new CharacterFactory();
+            textDocument.AddText("Hello2", "Arial", 12);
+            textDocument.AddText("Hello2", "Arial", 12);
 
-            // extrinsic state
+            textDocument.AddText("Hello3", "Arial", 12, true);
+            textDocument.AddText("Hello3", "Arial", 12, true);
 
-            var pointSize = 10;
+            textDocument.AddText("Hello4", "Arial", 12, true, true);
+            textDocument.AddText("Hello4", "Arial", 12, true, true);
 
-            // For each character use a flyweight object
+            textDocument.Show();
 
-            foreach (var c in chars)
-            {
-                pointSize++;
-                var character = factory.GetCharacter(c);
-                character.Display(pointSize);
-            }
-
-            // Wait for user
-
-            Console.ReadKey();
         }
     }
 

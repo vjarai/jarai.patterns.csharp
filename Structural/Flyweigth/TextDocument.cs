@@ -9,11 +9,11 @@ namespace Jarai.Patterns.Structural.Flyweigth
     {
         private readonly List<FlyweightText> _text = new List<FlyweightText>();
 
-        readonly FormatCache _formatCache = new FormatCache();
+        readonly FormatFactory _formatFactory = new FormatFactory();
 
         public void AddText(string text, string fontName = "Arial", int fontSize = 10, bool isBold = false, bool isUnderline = false, bool isItalic = false)
         {
-            var format = _formatCache.GetOrCreateFormat(fontName, fontSize, isBold, isUnderline, isItalic);
+            var format = _formatFactory.CreateOrGetFormat(fontName, fontSize, isBold, isUnderline, isItalic);
 
             _text.Add(new FlyweightText { Text = text, Format = format });
         }

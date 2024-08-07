@@ -5,11 +5,11 @@ using System.Text;
 
 namespace Jarai.Patterns.Structural.Flyweigth
 {
-    public class FormatCache
+    public class FormatFactory
     {
         readonly Dictionary<string, Format> _cache = new Dictionary<string, Format>();
 
-        public Format GetOrCreateFormat(string fontName, int fontSize, bool isBold, bool isUnderline, bool isItalic)
+        public Format CreateOrGetFormat(string fontName, int fontSize, bool isBold, bool isUnderline, bool isItalic)
         {
             string key = GetKey(fontName, fontSize, isBold, isUnderline, isItalic);
 

@@ -9,29 +9,29 @@
   </Class>
   <Class Name="Jarai.Patterns.Structural.Flyweigth.TextDocument">
     <Position X="0.75" Y="1.5" Width="3" />
-    <AssociationLine Name="_formatCache" Type="Jarai.Patterns.Structural.Flyweigth.FormatCache" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="_formatFactory" Type="Jarai.Patterns.Structural.Flyweigth.FormatFactory" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="2.125" Y="2.796" />
+        <Point X="2.125" Y="2.806" />
         <Point X="2.125" Y="4.344" />
         <Point X="5.75" Y="4.344" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAEAAAIAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAEAAAAAEAAAIAAAAAAAAAAA=</HashCode>
       <FileName>TextDocument.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="_formatCache" />
+      <Field Name="_formatFactory" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Field Name="_text" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="Jarai.Patterns.Structural.Flyweigth.FormatCache">
+  <Class Name="Jarai.Patterns.Structural.Flyweigth.FormatFactory">
     <Position X="5.75" Y="3.75" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAACAIAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>FormatCache.cs</FileName>
+      <HashCode>AAAAAABAAIAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormatFactory.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Field Name="_cache" />

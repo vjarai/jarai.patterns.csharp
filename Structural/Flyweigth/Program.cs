@@ -1,32 +1,28 @@
-﻿using System;
+﻿namespace Jarai.Patterns.Structural.Flyweigth;
 
-namespace Jarai.Patterns.Structural.Flyweigth
+/// <summary>
+///     Flyweight Design Pattern
+/// </summary>
+public class Program
 {
-    /// <summary>
-    ///     Flyweight Design Pattern
-    /// </summary>
-    public class Program
+    public static void Main()
     {
-        public static void Main()
-        {
-            var textDocument = new TextDocument();
+        var textDocument = new TextDocument();
 
-            textDocument.AddText("Hello1");
-            textDocument.AddText("Hello1");
+        textDocument.AddText("Hello1");
+        textDocument.AddText("Hello1");
 
-            textDocument.AddText("Hello2", "Arial", 12);
-            textDocument.AddText("Hello2", "Arial", 12);
+        textDocument.AddText("Hello2", "Arial", 12);
+        textDocument.AddText("Hello2", "Arial", 12);
 
-            textDocument.AddText("Hello3", "Arial", 12, true);
-            textDocument.AddText("Hello3", "Arial", 12, true);
+        textDocument.AddText("Hello3", "Arial", 12, true);
+        textDocument.AddText("Hello3", "Arial", 12, true);
 
-            textDocument.AddText("Hello4", "Arial", 12, true, true);
-            textDocument.AddText("Hello4", "Arial", 12, true, true);
+        textDocument.AddText("Hello4", "Arial", 12, true, true);
+        textDocument.AddText("Hello4", "Arial", 12, true, true);
 
-            textDocument.Show();
-
-        }
+        textDocument.Show();
     }
-
-    // ... C, D, E, etc.
 }
+
+// ... C, D, E, etc.

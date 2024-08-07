@@ -1,29 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace Jarai.Patterns.Structural.Flyweigth
+namespace Jarai.Patterns.Structural.Flyweigth;
+
+public class FormatFactory
 {
-    public class FormatFactory
+    private readonly Dictionary<string, Format> _cache = new();
+
+    public Format CreateOrGetFormat(string fontName, int fontSize, bool isBold, bool isUnderline, bool isItalic)
     {
-        readonly Dictionary<string, Format> _cache = new Dictionary<string, Format>();
+        string key = GetKey(fontName, fontSize, isBold, isUnderline, isItalic);
 
-        public Format CreateOrGetFormat(string fontName, int fontSize, bool isBold, bool isUnderline, bool isItalic)
-        {
-            string key = GetKey(fontName, fontSize, isBold, isUnderline, isItalic);
-
-            if (!_cache.ContainsKey(key))
+        if (!_cache.ContainsKey(key))
+            _cache[key] = new Format
             {
-                _cache[key] = new Format{FontName = fontName, FontSize = fontSize, IsBold = isBold, IsUnderline = isUnderline, IsItalic = isItalic};
-            }
+                FontName = fontName, FontSize = fontSize, IsBold = isBold, IsUnderline = isUnderline,
+                IsItalic = isItalic
+            };
 
-            return _cache[key];
-        }
+        return _cache[key];
+    }
 
-        private static string GetKey(string fontName, int fontSize, bool isBold, bool isUnderline, bool isItalic)
-        {
-            return $"{fontName} {fontSize}, IsBold:{isBold}, IsUnderline{isUnderline}, IsItalic{isItalic}";
-        }
+    private static string GetKey(string fontName, int fontSize, bool isBold, bool isUnderline, bool isItalic)
+    {
+        return $"{fontName} {fontSize}, IsBold:{isBold}, IsUnderline{isUnderline}, IsItalic{isItalic}";
     }
 }

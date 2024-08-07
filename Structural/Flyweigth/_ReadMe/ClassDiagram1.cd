@@ -40,7 +40,7 @@
   <Class Name="Jarai.Patterns.Structural.Flyweigth.FormattedText">
     <Position X="1.25" Y="5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AgAACAAAAAAAAAAEAAAAAgAIAAAgAAAAAAAACAAAAAA=</HashCode>
+      <HashCode>AgAACAAAAAAAAAAAAAAAAgAIAAAgAAAAAAAACAAAAAA=</HashCode>
       <FileName>FormattedText.cs</FileName>
     </TypeIdentifier>
   </Class>

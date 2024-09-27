@@ -2,7 +2,7 @@
 
 namespace Jarai.Patterns.Behavioral.ChainOfResponsibilty
 {
-    public abstract class RequestHandler : IAlexaSkill
+    public abstract class AlexaSkill : IAlexaSkill
     {
         protected string GetParameter(string request, string token, string defaultValue)
         {

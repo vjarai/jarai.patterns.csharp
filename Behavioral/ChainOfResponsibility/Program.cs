@@ -8,11 +8,11 @@ namespace Jarai.Patterns.Behavioral.ChainOfResponsibilty
         {
             var myAlexa = new Alexa();
 
-            //myAlexa.InstallSkill(new RadioSkill());
-            //myAlexa.InstallSkill(new WettervorhersageSkill());
-            //myAlexa.InstallSkill(new LampenSkill());
+            myAlexa.InstallSkill(new RadioSkill());
+            myAlexa.InstallSkill(new WettervorhersageSkill());
+            myAlexa.InstallSkill(new LampenSkill());
 
-            myAlexa.InstallSkills();
+            //myAlexa.InstallSkills();
 
             myAlexa.HandleRequest("Spiele Radio HR3");
             myAlexa.HandleRequest("Wie wird das Wetter?");

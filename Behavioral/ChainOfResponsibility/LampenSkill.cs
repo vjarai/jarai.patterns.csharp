@@ -2,7 +2,7 @@
 
 namespace Jarai.Patterns.Behavioral.ChainOfResponsibilty
 {
-    public class LampenSkill : RequestHandler
+    public class LampenSkill : AlexaSkill, IAlexaSkill
     {
         public override bool CanHandleRequest(string request)
         {

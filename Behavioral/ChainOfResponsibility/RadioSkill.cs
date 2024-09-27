@@ -2,7 +2,7 @@
 
 namespace Jarai.Patterns.Behavioral.ChainOfResponsibilty
 {
-    public class RadioSkill : RequestHandler
+    public class RadioSkill : AlexaSkill, IAlexaSkill
     {
         public override bool CanHandleRequest(string request)
         {

@@ -2,7 +2,7 @@
 
 namespace Jarai.Patterns.Behavioral.ChainOfResponsibilty
 {
-    public class WettervorhersageSkill : RequestHandler
+    public class WettervorhersageSkill : AlexaSkill, IAlexaSkill
     {
         public override bool CanHandleRequest(string request)
         {

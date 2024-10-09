@@ -6,22 +6,22 @@ namespace Jarai.Patterns.Behavioral.Command
     {
         public void DreheLinks()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Roboter dreht nach links");
         }
 
         public void DreheRechts()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Roboter dreht nach rechts");
         }
 
         public void HebeArm(int cm)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Roboter hebt Arm um {cm}");
         }
 
         public void SenkeArm(int cm)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Roboter senkt Arm um {cm}");
         }
     }
 }

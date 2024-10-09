@@ -13,12 +13,12 @@ namespace Jarai.Patterns.Behavioral.Command
 
         public override void Execute(Roboter roboter)
         {
-            Console.WriteLine("Drehe links " + _grad + " Grad");
+            roboter.DreheLinks();
         }
 
         public override void Undo(Roboter roboter)
         {
-            Console.WriteLine("Rückgängog Drehe links " + _grad + " Grad");
+            roboter.DreheRechts();
         }
     }
 }

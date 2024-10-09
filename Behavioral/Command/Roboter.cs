@@ -4,14 +4,14 @@ namespace Jarai.Patterns.Behavioral.Command
 {
     public class Roboter
     {
-        public void DreheLinks()
+        public void DreheLinks(int grad)
         {
-            Console.WriteLine("Roboter dreht nach links");
+            Console.WriteLine($"Roboter dreht {grad} grad links ");
         }
 
-        public void DreheRechts()
+        public void DreheRechts(int grad)
         {
-            Console.WriteLine("Roboter dreht nach rechts");
+            Console.WriteLine($"Roboter dreht {grad} grad nach rechts");
         }
 
         public void HebeArm(int cm)

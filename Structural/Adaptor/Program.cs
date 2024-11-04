@@ -6,15 +6,15 @@ namespace Jarai.Patterns.Structural.Adapter
     {
         private static void Main(string[] args)
         {
-            var b1 = new ApplePhone();
+            var applePhone = new ApplePhone();
 
-            var d1 = new LightningLadegerät();
-            b1.Aufladen(d1);
+            var lightningLadegerät = new LightningLadegerät();
+            applePhone.Aufladen(lightningLadegerät);
 
 
-            var p1 = new UsbLadegerät();
-            var pa = new UsbToLightningAdapter(p1);
-            b1.Aufladen(pa);
+            var usbLadegerät = new UsbLadegerät();
+            var adapter = new UsbToLightningAdapter(usbLadegerät);
+            applePhone.Aufladen(adapter);
 
             Console.Read();
         }

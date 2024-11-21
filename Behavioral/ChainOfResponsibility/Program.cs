@@ -17,7 +17,7 @@ namespace Jarai.Patterns.Behavioral.ChainOfResponsibilty
             myAlexa.HandleRequest("Spiele Radio HR3");
             myAlexa.HandleRequest("Wie wird das Wetter?");
             myAlexa.HandleRequest("Schalte Licht Wohnzimmer ein");
-            myAlexa.HandleRequest("BlaBla");
+            myAlexa.HandleRequest("Was ist der Sinn des Lebens?");
 
             Console.ReadLine();
         }

@@ -14,6 +14,8 @@ namespace Jarai.Patterns.Behavioral.Visitor
         {
             foreach (var fahrzeug in _fahrzeuge)
             {
+                //visitor.Visit(fahrzeug);
+
                 fahrzeug.Accept(visitor);
             }
 

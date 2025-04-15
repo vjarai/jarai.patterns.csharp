@@ -21,7 +21,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Jarai.Patterns.Behavioral.Memento.Document">
-    <Position X="5.25" Y="2.25" Width="3.25" />
+    <Position X="5.25" Y="2.75" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAACAIAAAAAAAAAEAAAJAAAAAAAAAAA=</HashCode>
       <FileName>Document.cs</FileName>

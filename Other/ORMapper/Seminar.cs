@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Jarai.Patterns.ORMapper
 {
     [Table("Seminare")]
-    public class Seminar
+    public class Seminar // Persistenz ignorant
     {
         public int Id { get; set; }
 

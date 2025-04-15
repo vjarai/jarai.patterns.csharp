@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Jarai.Patterns.ORMapper.Seminar">
-    <Position X="4.25" Y="4.75" Width="1.5" />
+    <Position X="4.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAACAAAA=</HashCode>
       <FileName>Seminar.cs</FileName>
@@ -11,7 +11,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Jarai.Patterns.ORMapper.Teilnehmer">
-    <Position X="4" Y="2.5" Width="2" />
+    <Position X="8.75" Y="4" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Teilnehmer.cs</FileName>
@@ -21,18 +21,17 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Jarai.Patterns.ORMapper.Database">
-    <Position X="1" Y="2.5" Width="1.5" />
+    <Position X="1" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAABAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Database.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="Seminare" />
-      <Property Name="Teilnehmer" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Jarai.Patterns.ORMapper.Person">
-    <Position X="4.25" Y="0.5" Width="1.5" />
+    <Position X="9" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Person.cs</FileName>

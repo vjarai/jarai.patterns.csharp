@@ -9,13 +9,6 @@
   </Class>
   <Class Name="Jarai.Patterns.Structural.Flyweigth.TextDocument">
     <Position X="0.75" Y="1.5" Width="3" />
-    <AssociationLine Name="_formatFactory" Type="Jarai.Patterns.Structural.Flyweigth.FormatFactory" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="2.125" Y="2.806" />
-        <Point X="2.125" Y="4.344" />
-        <Point X="5.75" Y="4.344" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAABAAAAAEAAAAAEAAAIAAAAAAAAAAA=</HashCode>
       <FileName>TextDocument.cs</FileName>
@@ -28,7 +21,14 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Jarai.Patterns.Structural.Flyweigth.FormatFactory">
-    <Position X="5.75" Y="3.75" Width="2.25" />
+    <Position X="4.25" Y="3.75" Width="3.75" />
+    <AssociationLine Name="_cache" Type="Jarai.Patterns.Structural.Flyweigth.Format" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.438" />
+        <Point X="11.5" Y="4.438" />
+        <Point X="11.5" Y="3.824" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAABAAIAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FormatFactory.cs</FileName>
